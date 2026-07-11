@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-50: #f8fafc;
+  --color-surface-100: #f1f5f9;
+  --color-surface-200: #e2e8f0;
+  --color-surface-300: #cbd5e1;
+  --color-surface-400: #94a3b8;
+  --color-surface-500: #64748b;
+  --color-surface-600: #475569;
+  --color-surface-700: #334155;
+  --color-surface-800: #1e293b;
+  --color-surface-850: #172033;
+  --color-surface-900: #0f172a;
+  --color-surface-950: #020617;
+
+  --color-accent-400: #60a5fa;
+  --color-accent-500: #3b82f6;
+
+  --color-easy: #22c55e;
+  --color-medium: #f59e0b;
+  --color-hard: #ef4444;
+
+  --color-solved: #22c55e;
+  --color-attempting: #eab308;
+  --color-not-started: #64748b;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-surface-950);
+  color: var(--color-surface-100);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme="light"] body,
+body[data-theme="light"],
+[data-theme="light"] {
+  --color-surface-50: #020617;
+  --color-surface-100: #0f172a;
+  --color-surface-200: #1e293b;
+  --color-surface-300: #334155;
+  --color-surface-400: #475569;
+  --color-surface-500: #64748b;
+  --color-surface-600: #94a3b8;
+  --color-surface-700: #cbd5e1;
+  --color-surface-800: #e2e8f0;
+  --color-surface-850: #f1f5f9;
+  --color-surface-900: #ffffff;
+  --color-surface-950: #f8fafc;
+
+  --color-accent-400: #3b82f6;
+  --color-accent-500: #2563eb;
+
+  background-color: var(--color-surface-950);
+  color: var(--color-surface-100);
+}
+
+[data-theme="light"] ::selection {
+  background-color: rgba(37, 99, 235, 0.15);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-track {
+  background: var(--color-surface-900);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: var(--color-surface-500);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-400);
+}
+
+[data-theme="light"] select option {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+::selection {
+  background-color: rgba(59, 130, 246, 0.2);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-900);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-600);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-surface-500);
+}
+
+select option {
+  background-color: #1e293b;
+  color: #f1f5f9;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}

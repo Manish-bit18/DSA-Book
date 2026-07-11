@@ -1,0 +1,320 @@
+{
+  "id": "heap",
+  "title": "Heap / Priority Queue",
+  "description": "Master Heap and Priority Queue from beginner to advanced. Learn Top K, Merge K Lists, Median, Scheduling and Heap Construction.",
+
+  "patterns": [
+
+    {
+      "id": "priority-queue",
+      "name": "Priority Queue",
+      "description": "Learn how to use min-heaps and max-heaps for efficient element retrieval.",
+      "recognitionClues": [
+        "Highest Priority",
+        "Lowest Priority",
+        "Priority Queue",
+        "Heap"
+      ],
+      "prerequisites": [
+        "Arrays"
+      ],
+      "commonMistakes": [
+        "Using wrong comparator",
+        "Confusing min heap and max heap",
+        "Not maintaining heap property"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 703,
+          "title": "Kth Largest Element in a Stream",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+        },
+        {
+          "leetcodeNumber": 1046,
+          "title": "Last Stone Weight",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/last-stone-weight/"
+        },
+        {
+          "leetcodeNumber": 2336,
+          "title": "Smallest Number in Infinite Set",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/smallest-number-in-infinite-set/"
+        }
+      ]
+    },
+
+    {
+      "id": "top-k",
+      "name": "Top K",
+      "description": "Find the K largest, smallest or most frequent elements efficiently using heaps.",
+      "recognitionClues": [
+        "Top K",
+        "K Largest",
+        "K Smallest",
+        "Most Frequent"
+      ],
+      "prerequisites": [
+        "Priority Queue"
+      ],
+      "commonMistakes": [
+        "Using full sorting",
+        "Wrong heap size",
+        "Wrong comparator"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 215,
+          "title": "Kth Largest Element in an Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+        },
+        {
+          "leetcodeNumber": 347,
+          "title": "Top K Frequent Elements",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-elements/"
+        },
+        {
+          "leetcodeNumber": 692,
+          "title": "Top K Frequent Words",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-words/"
+        },
+        {
+          "leetcodeNumber": 973,
+          "title": "K Closest Points to Origin",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/k-closest-points-to-origin/"
+        },
+        {
+          "leetcodeNumber": 658,
+          "title": "Find K Closest Elements",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-k-closest-elements/"
+        }
+      ]
+    },
+
+    {
+      "id": "merge-k-sorted-lists",
+      "name": "Merge K Sorted Lists",
+      "description": "Merge multiple sorted structures efficiently using a heap.",
+      "recognitionClues": [
+        "Merge K",
+        "Multiple Sorted Lists",
+        "Priority Queue"
+      ],
+      "prerequisites": [
+        "Linked List",
+        "Priority Queue"
+      ],
+      "commonMistakes": [
+        "Using repeated merging",
+        "Ignoring null lists"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 23,
+          "title": "Merge k Sorted Lists",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/merge-k-sorted-lists/"
+        },
+        {
+          "leetcodeNumber": 378,
+          "title": "Kth Smallest Element in a Sorted Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/"
+        }
+      ]
+    },
+    {
+      "id": "median",
+      "name": "Median",
+      "description": "Maintain the median of a dynamic data stream using two heaps.",
+      "recognitionClues": [
+        "Median",
+        "Running Median",
+        "Data Stream",
+        "Two Heaps"
+      ],
+      "prerequisites": [
+        "Priority Queue"
+      ],
+      "commonMistakes": [
+        "Not balancing heaps",
+        "Using one heap only",
+        "Incorrect median calculation"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 295,
+          "title": "Find Median from Data Stream",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-median-from-data-stream/"
+        },
+        {
+          "leetcodeNumber": 480,
+          "title": "Sliding Window Median",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sliding-window-median/"
+        },
+        {
+          "leetcodeNumber": 346,
+          "title": "Moving Average from Data Stream",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/moving-average-from-data-stream/"
+        }
+      ]
+    },
+    {
+      "id": "scheduling",
+      "name": "Scheduling",
+      "description": "Use heaps to solve interval scheduling, meeting room allocation and task scheduling problems.",
+      "recognitionClues": [
+        "Meeting Rooms",
+        "Schedule",
+        "Intervals",
+        "Task Ordering",
+        "Minimum Resources"
+      ],
+      "prerequisites": [
+        "Priority Queue",
+        "Sorting"
+      ],
+      "commonMistakes": [
+        "Sorting by wrong key",
+        "Using queue instead of heap",
+        "Not releasing completed tasks"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 253,
+          "title": "Meeting Rooms II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms-ii/"
+        },
+        {
+          "leetcodeNumber": 621,
+          "title": "Task Scheduler",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/task-scheduler/"
+        },
+        {
+          "leetcodeNumber": 1094,
+          "title": "Car Pooling",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/car-pooling/"
+        },
+        {
+          "leetcodeNumber": 1834,
+          "title": "Single-Threaded CPU",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/single-threaded-cpu/"
+        },
+        {
+          "leetcodeNumber": 2402,
+          "title": "Meeting Rooms III",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms-iii/"
+        }
+      ]
+    },
+    {
+      "id": "heap-construction",
+      "name": "Heap Construction",
+      "description": "Build heaps efficiently and understand heapify operations for interview problems.",
+      "recognitionClues": [
+        "Heapify",
+        "Build Heap",
+        "Priority Queue Construction",
+        "Heap Sort"
+      ],
+      "prerequisites": [
+        "Priority Queue"
+      ],
+      "commonMistakes": [
+        "Incorrect heapify direction",
+        "Confusing insert with build-heap",
+        "Wrong child index calculation"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 215,
+          "title": "Kth Largest Element in an Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+        },
+        {
+          "leetcodeNumber": 1046,
+          "title": "Last Stone Weight",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/last-stone-weight/"
+        },
+        {
+          "leetcodeNumber": 1962,
+          "title": "Remove Stones to Minimize the Total",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-stones-to-minimize-the-total/"
+        },
+        {
+          "leetcodeNumber": 767,
+          "title": "Reorganize String",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/reorganize-string/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "id": "recursion",
+  "title": "Recursion",
+  "description": "Master Recursion from beginner to advanced. Learn recursive thinking, divide and conquer, recursion trees, and build a strong foundation for Backtracking, Trees, and Dynamic Programming.",
+  "patterns": [
+    {
+      "id": "basic-recursion",
+      "name": "Basic Recursion",
+      "description": "Learn recursive function calls, base cases, recursive thinking and recursive traversal.",
+      "recognitionClues": [
+        "Recursive Function",
+        "Base Case",
+        "Self Call",
+        "Recursive Traversal"
+      ],
+      "prerequisites": [
+        "Functions"
+      ],
+      "commonMistakes": [
+        "Missing base case",
+        "Infinite recursion",
+        "Wrong recursive call"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 50,
+          "title": "Pow(x, n)",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/powx-n/"
+        },
+        {
+          "leetcodeNumber": 231,
+          "title": "Power of Two",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/power-of-two/"
+        },
+        {
+          "leetcodeNumber": 326,
+          "title": "Power of Three",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/power-of-three/"
+        },
+        {
+          "leetcodeNumber": 342,
+          "title": "Power of Four",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/power-of-four/"
+        }
+      ]
+    },
+    {
+      "id": "divide-and-conquer",
+      "name": "Divide and Conquer",
+      "description": "Split problems into smaller independent subproblems and combine their solutions.",
+      "recognitionClues": [
+        "Divide",
+        "Split",
+        "Merge",
+        "Recursive Halves"
+      ],
+      "prerequisites": [
+        "Basic Recursion"
+      ],
+      "commonMistakes": [
+        "Incorrect split",
+        "Wrong merge step",
+        "Overlapping recursion"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 23,
+          "title": "Merge k Sorted Lists",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/merge-k-sorted-lists/"
+        },
+        {
+          "leetcodeNumber": 148,
+          "title": "Sort List",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-list/"
+        },
+        {
+          "leetcodeNumber": 427,
+          "title": "Construct Quad Tree",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/construct-quad-tree/"
+        },
+        {
+          "leetcodeNumber": 912,
+          "title": "Sort an Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-an-array/"
+        }
+      ]
+    },
+    {
+      "id": "recursion-tree",
+      "name": "Recursion Tree",
+      "description": "Understand recursive branching, recursive state expansion and exponential recursion.",
+      "recognitionClues": [
+        "Choices",
+        "Decision Tree",
+        "Branching",
+        "Recursive Expansion"
+      ],
+      "prerequisites": [
+        "Basic Recursion"
+      ],
+      "commonMistakes": [
+        "Wrong branching",
+        "Ignoring repeated states",
+        "Not visualizing recursion"
+      ],
+      "estimatedProblems": 7,
+      "problems": [
+        {
+          "leetcodeNumber": 509,
+          "title": "Fibonacci Number",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/fibonacci-number/"
+        },
+        {
+          "leetcodeNumber": 779,
+          "title": "K-th Symbol in Grammar",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/k-th-symbol-in-grammar/"
+        },
+        {
+          "leetcodeNumber": 95,
+          "title": "Unique Binary Search Trees II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/unique-binary-search-trees-ii/"
+        }
+      ]
+    },
+    {
+      "id": "recursive-backtracking-foundation",
+      "name": "Recursive Backtracking Foundation",
+      "description": "Build recursive state-space exploration before learning full Backtracking.",
+      "recognitionClues": [
+        "Generate",
+        "Explore",
+        "Choose",
+        "Undo Choice"
+      ],
+      "prerequisites": [
+        "Recursion Tree"
+      ],
+      "commonMistakes": [
+        "Forgetting to backtrack",
+        "Wrong recursive state",
+        "Incorrect stopping condition"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 78,
+          "title": "Subsets",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subsets/"
+        },
+        {
+          "leetcodeNumber": 46,
+          "title": "Permutations",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/permutations/"
+        },
+        {
+          "leetcodeNumber": 39,
+          "title": "Combination Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/combination-sum/"
+        },
+        {
+          "leetcodeNumber": 22,
+          "title": "Generate Parentheses",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/generate-parentheses/"
+        }
+      ]
+    }
+  ]
+}

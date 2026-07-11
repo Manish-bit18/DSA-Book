@@ -1,0 +1,420 @@
+{
+  "id": "hashmap-hashset",
+  "title": "HashMap & HashSet",
+  "description": "Master HashMap and HashSet from beginner to advanced. Learn frequency counting, lookups, grouping, prefix sums, mappings and hashing-based interview patterns.",
+  "patterns": [
+    {
+      "id": "frequency-counting",
+      "name": "Frequency Counting",
+      "description": "Count occurrences of numbers or characters using HashMap or arrays.",
+      "recognitionClues": [
+        "Frequency",
+        "Occurrences",
+        "Duplicates",
+        "Counting",
+        "Most Frequent"
+      ],
+      "prerequisites": [
+        "Arrays",
+        "Strings"
+      ],
+      "commonMistakes": [
+        "Incorrect frequency updates",
+        "Missing default value",
+        "Ignoring edge cases"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 1,
+          "title": "Two Sum",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/two-sum/"
+        },
+        {
+          "leetcodeNumber": 169,
+          "title": "Majority Element",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/majority-element/"
+        },
+        {
+          "leetcodeNumber": 217,
+          "title": "Contains Duplicate",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate/"
+        },
+        {
+          "leetcodeNumber": 242,
+          "title": "Valid Anagram",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-anagram/"
+        },
+        {
+          "leetcodeNumber": 347,
+          "title": "Top K Frequent Elements",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-elements/"
+        },
+        {
+          "leetcodeNumber": 451,
+          "title": "Sort Characters By Frequency",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-characters-by-frequency/"
+        },
+        {
+          "leetcodeNumber": 692,
+          "title": "Top K Frequent Words",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-words/"
+        }
+      ]
+    },
+    {
+      "id": "lookup",
+      "name": "Lookup",
+      "description": "Store values for constant-time lookup using HashMap.",
+      "recognitionClues": [
+        "Find Quickly",
+        "Lookup",
+        "Visited",
+        "Search"
+      ],
+      "prerequisites": [
+        "Frequency Counting"
+      ],
+      "commonMistakes": [
+        "Using arrays unnecessarily",
+        "Incorrect key selection"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 1,
+          "title": "Two Sum",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/two-sum/"
+        },
+        {
+          "leetcodeNumber": 205,
+          "title": "Isomorphic Strings",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/isomorphic-strings/"
+        },
+        {
+          "leetcodeNumber": 290,
+          "title": "Word Pattern",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/word-pattern/"
+        },
+        {
+          "leetcodeNumber": 706,
+          "title": "Design HashMap",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/design-hashmap/"
+        }
+      ]
+    },
+    {
+      "id": "grouping",
+      "name": "Grouping",
+      "description": "Group related elements together using hashing.",
+      "recognitionClues": [
+        "Group",
+        "Buckets",
+        "Categorize",
+        "Cluster"
+      ],
+      "prerequisites": [
+        "Frequency Counting"
+      ],
+      "commonMistakes": [
+        "Wrong grouping key",
+        "Sorting unnecessarily"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 49,
+          "title": "Group Anagrams",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/group-anagrams/"
+        },
+        {
+          "leetcodeNumber": 1282,
+          "title": "Group the People Given the Group Size They Belong To",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/"
+        },
+        {
+          "leetcodeNumber": 249,
+          "title": "Group Shifted Strings",
+          "difficulty": "Medium",
+          "serviceImportance": 2,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/group-shifted-strings/"
+        }
+      ]
+    },
+    {
+      "id": "hashset-lookup",
+      "name": "HashSet Lookup",
+      "description": "Use HashSet for constant-time membership checking, duplicate detection and uniqueness problems.",
+      "recognitionClues": [
+        "Unique Elements",
+        "Contains",
+        "Duplicate Detection",
+        "Visited",
+        "Lookup"
+      ],
+      "prerequisites": [
+        "Basic Hashing"
+      ],
+      "commonMistakes": [
+        "Using HashMap unnecessarily",
+        "Forgetting to insert visited elements",
+        "Not handling duplicates correctly"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 128,
+          "title": "Longest Consecutive Sequence",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-consecutive-sequence/"
+        },
+        {
+          "leetcodeNumber": 202,
+          "title": "Happy Number",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/happy-number/"
+        },
+        {
+          "leetcodeNumber": 217,
+          "title": "Contains Duplicate",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate/"
+        },
+        {
+          "leetcodeNumber": 349,
+          "title": "Intersection of Two Arrays",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-arrays/"
+        },
+        {
+          "leetcodeNumber": 705,
+          "title": "Design HashSet",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/design-hashset/"
+        }
+      ]
+    },
+    {
+      "id": "prefix-sum-hashmap",
+      "name": "Prefix Sum + HashMap",
+      "description": "One of the highest-yield interview patterns. Combine prefix sums with hashing to solve subarray problems in linear time.",
+      "recognitionClues": [
+        "Subarray Sum",
+        "Running Sum",
+        "Equal K",
+        "Prefix Sum",
+        "Count Subarrays"
+      ],
+      "prerequisites": [
+        "Prefix Sum",
+        "HashMap"
+      ],
+      "commonMistakes": [
+        "Not initializing prefix sum with 0",
+        "Updating map before checking",
+        "Integer overflow"
+      ],
+      "estimatedProblems": 12,
+      "problems": [
+        {
+          "leetcodeNumber": 325,
+          "title": "Maximum Size Subarray Sum Equals k",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/"
+        },
+        {
+          "leetcodeNumber": 523,
+          "title": "Continuous Subarray Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/continuous-subarray-sum/"
+        },
+        {
+          "leetcodeNumber": 525,
+          "title": "Contiguous Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/contiguous-array/"
+        },
+        {
+          "leetcodeNumber": 560,
+          "title": "Subarray Sum Equals K",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subarray-sum-equals-k/"
+        },
+        {
+          "leetcodeNumber": 930,
+          "title": "Binary Subarrays With Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-subarrays-with-sum/"
+        },
+        {
+          "leetcodeNumber": 974,
+          "title": "Subarray Sums Divisible by K",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subarray-sums-divisible-by-k/"
+        }
+      ]
+    },
+    {
+      "id": "counting-problems",
+      "name": "Counting Problems",
+      "description": "Solve problems that require counting valid pairs, triplets or occurrences using hashing.",
+      "recognitionClues": [
+        "Count Pairs",
+        "Count Triplets",
+        "Frequency",
+        "Occurrences"
+      ],
+      "prerequisites": [
+        "Frequency Counting"
+      ],
+      "commonMistakes": [
+        "Double counting",
+        "Wrong update order",
+        "Ignoring duplicates"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 454,
+          "title": "4Sum II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/4sum-ii/"
+        },
+        {
+          "leetcodeNumber": 1497,
+          "title": "Check If Array Pairs Are Divisible by k",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/"
+        },
+        {
+          "leetcodeNumber": 2006,
+          "title": "Count Number of Pairs With Absolute Difference K",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/"
+        }
+      ]
+    },
+    {
+      "id": "mapping-problems",
+      "name": "Mapping Problems",
+      "description": "Maintain relationships between values using HashMap for efficient mapping and transformation.",
+      "recognitionClues": [
+        "Character Mapping",
+        "Word Mapping",
+        "One-to-One Relation",
+        "Transform"
+      ],
+      "prerequisites": [
+        "Lookup"
+      ],
+      "commonMistakes": [
+        "One-way mapping",
+        "Ignoring reverse mapping",
+        "Duplicate assignments"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 205,
+          "title": "Isomorphic Strings",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/isomorphic-strings/"
+        },
+        {
+          "leetcodeNumber": 290,
+          "title": "Word Pattern",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/word-pattern/"
+        },
+        {
+          "leetcodeNumber": 890,
+          "title": "Find and Replace Pattern",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-and-replace-pattern/"
+        },
+        {
+          "leetcodeNumber": 981,
+          "title": "Time Based Key-Value Store",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/time-based-key-value-store/"
+        }
+      ]
+    }
+  ]
+}

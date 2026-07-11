@@ -1,0 +1,296 @@
+{
+  "id": "binary-search-tree",
+  "title": "Binary Search Tree",
+  "description": "Master Binary Search Trees from beginner to advanced. Learn Search, Insert, Delete, Validation, Iterators, Range Queries, Kth Smallest, Successor & Predecessor and other important interview patterns.",
+
+  "patterns": [
+
+    {
+      "id": "search",
+      "name": "Search",
+      "description": "Search efficiently in a Binary Search Tree using BST properties.",
+      "recognitionClues": [
+        "Search Node",
+        "Find Value",
+        "BST Property",
+        "Lookup"
+      ],
+      "prerequisites": [
+        "Binary Trees"
+      ],
+      "commonMistakes": [
+        "Ignoring BST property",
+        "Traversing entire tree unnecessarily",
+        "Wrong recursive condition"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 700,
+          "title": "Search in a Binary Search Tree",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-in-a-binary-search-tree/"
+        },
+        {
+          "leetcodeNumber": 938,
+          "title": "Range Sum of BST",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/range-sum-of-bst/"
+        },
+        {
+          "leetcodeNumber": 653,
+          "title": "Two Sum IV - Input is a BST",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/"
+        }
+      ]
+    },
+
+    {
+      "id": "insert",
+      "name": "Insert",
+      "description": "Insert nodes into a Binary Search Tree while preserving BST properties.",
+      "recognitionClues": [
+        "Insert Node",
+        "Build BST",
+        "Recursive Insert"
+      ],
+      "prerequisites": [
+        "Search"
+      ],
+      "commonMistakes": [
+        "Wrong insertion position",
+        "Breaking BST property"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 701,
+          "title": "Insert into a Binary Search Tree",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/insert-into-a-binary-search-tree/"
+        },
+        {
+          "leetcodeNumber": 108,
+          "title": "Convert Sorted Array to Binary Search Tree",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/"
+        }
+      ]
+    },
+
+    {
+      "id": "delete",
+      "name": "Delete",
+      "description": "Delete nodes from a BST while maintaining the BST property.",
+      "recognitionClues": [
+        "Delete Node",
+        "Successor",
+        "Predecessor",
+        "BST Delete"
+      ],
+      "prerequisites": [
+        "Insert"
+      ],
+      "commonMistakes": [
+        "Incorrect successor selection",
+        "Breaking tree links",
+        "Not handling leaf/single-child cases"
+      ],
+      "estimatedProblems": 3,
+      "problems": [
+        {
+          "leetcodeNumber": 450,
+          "title": "Delete Node in a BST",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/delete-node-in-a-bst/"
+        }
+      ]
+    },
+
+    {
+      "id": "validation",
+      "name": "Validation",
+      "description": "Verify whether a tree satisfies BST properties.",
+      "recognitionClues": [
+        "Valid BST",
+        "Bounds",
+        "Inorder"
+      ],
+      "prerequisites": [
+        "BST Basics"
+      ],
+      "commonMistakes": [
+        "Checking only parent-child relation",
+        "Ignoring subtree limits"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 98,
+          "title": "Validate Binary Search Tree",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/validate-binary-search-tree/"
+        },
+        {
+          "leetcodeNumber": 99,
+          "title": "Recover Binary Search Tree",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/recover-binary-search-tree/"
+        }
+      ]
+    },
+
+    {
+      "id": "iterator",
+      "name": "Iterator",
+      "description": "Design iterators that traverse BSTs efficiently.",
+      "recognitionClues": [
+        "BST Iterator",
+        "Next Smallest",
+        "Lazy Traversal"
+      ],
+      "prerequisites": [
+        "Inorder Traversal",
+        "Stack"
+      ],
+      "commonMistakes": [
+        "Using full traversal",
+        "Not maintaining stack"
+      ],
+      "estimatedProblems": 3,
+      "problems": [
+        {
+          "leetcodeNumber": 173,
+          "title": "Binary Search Tree Iterator",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-search-tree-iterator/"
+        }
+      ]
+    },
+
+    {
+      "id": "range-query",
+      "name": "Range Query",
+      "description": "Use BST ordering to efficiently answer range-based queries.",
+      "recognitionClues": [
+        "Range",
+        "Between Low and High",
+        "Pruning"
+      ],
+      "prerequisites": [
+        "Search"
+      ],
+      "commonMistakes": [
+        "Traversing unnecessary branches",
+        "Ignoring BST ordering"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 938,
+          "title": "Range Sum of BST",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/range-sum-of-bst/"
+        }
+      ]
+    },
+
+    {
+      "id": "kth-smallest",
+      "name": "Kth Smallest",
+      "description": "Find kth smallest or kth largest elements using inorder traversal.",
+      "recognitionClues": [
+        "Kth Smallest",
+        "Inorder",
+        "Sorted Order"
+      ],
+      "prerequisites": [
+        "Inorder Traversal"
+      ],
+      "commonMistakes": [
+        "Ignoring inorder property",
+        "Wrong counter handling"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 230,
+          "title": "Kth Smallest Element in a BST",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+        },
+        {
+          "leetcodeNumber": 530,
+          "title": "Minimum Absolute Difference in BST",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/"
+        }
+      ]
+    },
+
+    {
+      "id": "successor-predecessor",
+      "name": "Successor & Predecessor",
+      "description": "Find inorder successor and predecessor using BST properties.",
+      "recognitionClues": [
+        "Successor",
+        "Predecessor",
+        "Next Greater",
+        "Previous Smaller"
+      ],
+      "prerequisites": [
+        "Search",
+        "Inorder Traversal"
+      ],
+      "commonMistakes": [
+        "Traversing entire tree",
+        "Ignoring BST ordering"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 285,
+          "title": "Inorder Successor in BST",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/inorder-successor-in-bst/"
+        },
+        {
+          "leetcodeNumber": 510,
+          "title": "Inorder Successor in BST II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/inorder-successor-in-bst-ii/"
+        }
+      ]
+    }
+
+  ]
+}

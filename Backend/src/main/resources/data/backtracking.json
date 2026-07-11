@@ -1,0 +1,393 @@
+{
+  "id": "backtracking",
+  "title": "Backtracking",
+  "description": "Master Backtracking from beginner to advanced. Learn recursive state-space search, constraint satisfaction, pruning, and classic interview problems.",
+  "patterns": [
+    {
+      "id": "subsets",
+      "name": "Subsets",
+      "description": "Generate all possible subsets using recursive inclusion and exclusion.",
+      "recognitionClues": [
+        "Generate all subsets",
+        "Power Set",
+        "Include or Exclude",
+        "Choices"
+      ],
+      "prerequisites": [
+        "Recursion"
+      ],
+      "commonMistakes": [
+        "Missing backtracking step",
+        "Incorrect base case",
+        "Modifying shared list"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 78,
+          "title": "Subsets",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subsets/"
+        },
+        {
+          "leetcodeNumber": 90,
+          "title": "Subsets II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subsets-ii/"
+        },
+        {
+          "leetcodeNumber": 1239,
+          "title": "Maximum Length of a Concatenated String with Unique Characters",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/"
+        }
+      ]
+    },
+    {
+      "id": "permutations",
+      "name": "Permutations",
+      "description": "Generate all permutations using recursive swapping or visited arrays.",
+      "recognitionClues": [
+        "Arrange",
+        "Ordering",
+        "Permutation",
+        "Swap"
+      ],
+      "prerequisites": [
+        "Subsets"
+      ],
+      "commonMistakes": [
+        "Not undoing swaps",
+        "Incorrect visited array"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 46,
+          "title": "Permutations",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/permutations/"
+        },
+        {
+          "leetcodeNumber": 47,
+          "title": "Permutations II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/permutations-ii/"
+        },
+        {
+          "leetcodeNumber": 60,
+          "title": "Permutation Sequence",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/permutation-sequence/"
+        }
+      ]
+    },
+    {
+      "id": "combinations",
+      "name": "Combinations",
+      "description": "Generate combinations using recursive branching while avoiding duplicates.",
+      "recognitionClues": [
+        "Choose k",
+        "Combinations",
+        "Pick or Skip"
+      ],
+      "prerequisites": [
+        "Subsets"
+      ],
+      "commonMistakes": [
+        "Wrong start index",
+        "Duplicate combinations"
+      ],
+      "estimatedProblems": 7,
+      "problems": [
+        {
+          "leetcodeNumber": 77,
+          "title": "Combinations",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/combinations/"
+        },
+        {
+          "leetcodeNumber": 216,
+          "title": "Combination Sum III",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/combination-sum-iii/"
+        }
+      ]
+    },
+    {
+      "id": "combination-sum",
+      "name": "Combination Sum",
+      "description": "Generate valid combinations that satisfy a target sum using recursive exploration and pruning.",
+      "recognitionClues": [
+        "Target Sum",
+        "Unlimited Choices",
+        "Choose or Skip",
+        "Backtracking"
+      ],
+      "prerequisites": [
+        "Combinations"
+      ],
+      "commonMistakes": [
+        "Not backtracking properly",
+        "Infinite recursion",
+        "Incorrect pruning"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 39,
+          "title": "Combination Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/combination-sum/"
+        },
+        {
+          "leetcodeNumber": 40,
+          "title": "Combination Sum II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/combination-sum-ii/"
+        },
+        {
+          "leetcodeNumber": 216,
+          "title": "Combination Sum III",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/combination-sum-iii/"
+        },
+        {
+          "leetcodeNumber": 377,
+          "title": "Combination Sum IV",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/combination-sum-iv/"
+        }
+      ]
+    },
+    {
+      "id": "n-queens",
+      "name": "N Queens",
+      "description": "Classic constraint satisfaction problem using recursive placement and pruning.",
+      "recognitionClues": [
+        "Chess Board",
+        "Queens",
+        "Safe Placement",
+        "Constraint Satisfaction"
+      ],
+      "prerequisites": [
+        "Backtracking Basics"
+      ],
+      "commonMistakes": [
+        "Checking the entire board",
+        "Not undoing queen placement",
+        "Incorrect diagonal validation"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 51,
+          "title": "N-Queens",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/n-queens/"
+        },
+        {
+          "leetcodeNumber": 52,
+          "title": "N-Queens II",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/n-queens-ii/"
+        }
+      ]
+    },
+    {
+      "id": "sudoku",
+      "name": "Sudoku",
+      "description": "Constraint satisfaction problems using recursive trial, validation and pruning.",
+      "recognitionClues": [
+        "Sudoku",
+        "Fill Board",
+        "Constraint",
+        "Backtracking"
+      ],
+      "prerequisites": [
+        "N Queens"
+      ],
+      "commonMistakes": [
+        "Slow validation",
+        "Missing backtracking",
+        "Incorrect stopping condition"
+      ],
+      "estimatedProblems": 3,
+      "problems": [
+        {
+          "leetcodeNumber": 37,
+          "title": "Sudoku Solver",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sudoku-solver/"
+        },
+        {
+          "leetcodeNumber": 36,
+          "title": "Valid Sudoku",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-sudoku/"
+        }
+      ]
+    },
+    {
+      "id": "word-search",
+      "name": "Word Search",
+      "description": "Explore matrices recursively while tracking visited cells and restoring state after each recursive call.",
+      "recognitionClues": [
+        "Grid DFS",
+        "Word Search",
+        "Visited Matrix",
+        "Path Search"
+      ],
+      "prerequisites": [
+        "DFS",
+        "Recursion"
+      ],
+      "commonMistakes": [
+        "Not restoring visited cells",
+        "Moving outside the grid",
+        "Wrong base case"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 79,
+          "title": "Word Search",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/word-search/"
+        },
+        {
+          "leetcodeNumber": 212,
+          "title": "Word Search II",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/word-search-ii/"
+        }
+      ]
+    },
+    {
+      "id": "partitioning",
+      "name": "Partitioning",
+      "description": "Partition strings or arrays into valid groups using recursive exploration.",
+      "recognitionClues": [
+        "Partition",
+        "Palindrome",
+        "Split",
+        "Grouping"
+      ],
+      "prerequisites": [
+        "Backtracking Basics"
+      ],
+      "commonMistakes": [
+        "Not restoring recursion state",
+        "Incorrect substring generation"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 131,
+          "title": "Palindrome Partitioning",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/palindrome-partitioning/"
+        },
+        {
+          "leetcodeNumber": 93,
+          "title": "Restore IP Addresses",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/restore-ip-addresses/"
+        },
+        {
+          "leetcodeNumber": 698,
+          "title": "Partition to K Equal Sum Subsets",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/"
+        }
+      ]
+    },
+    {
+      "id": "branch-and-bound",
+      "name": "Branch and Bound",
+      "description": "Optimize recursive search by pruning branches that cannot lead to better solutions.",
+      "recognitionClues": [
+        "Pruning",
+        "Optimization",
+        "Early Return",
+        "Search Tree"
+      ],
+      "prerequisites": [
+        "Backtracking"
+      ],
+      "commonMistakes": [
+        "Weak pruning",
+        "Incorrect bound calculation"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 698,
+          "title": "Partition to K Equal Sum Subsets",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/"
+        },
+        {
+          "leetcodeNumber": 473,
+          "title": "Matchsticks to Square",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/matchsticks-to-square/"
+        },
+        {
+          "leetcodeNumber": 1723,
+          "title": "Find Minimum Time to Finish All Jobs",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/"
+        }
+      ]
+    }
+  ]
+}

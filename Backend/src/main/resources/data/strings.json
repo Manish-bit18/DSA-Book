@@ -1,0 +1,1169 @@
+{
+  "id": "strings",
+  "title": "Strings",
+  "description": "Master String algorithms from beginner to advanced. Learn every interview pattern including Sliding Window, Hashing, KMP, Rabin-Karp, Rolling Hash, String DP and more.",
+
+  "patterns": [
+
+    {
+      "id": "character-frequency",
+      "name": "Character Frequency",
+      "description": "Count the occurrence of characters using arrays or hash maps. This is the foundation of many string interview problems.",
+      "recognitionClues": [
+        "Count characters",
+        "Frequency",
+        "Repeated letters",
+        "Unique characters",
+        "Occurrences"
+      ],
+      "prerequisites": [
+        "Strings",
+        "Arrays"
+      ],
+      "commonMistakes": [
+        "Wrong ASCII index",
+        "Ignoring uppercase/lowercase",
+        "Incorrect frequency updates"
+      ],
+      "estimatedProblems": 12,
+      "problems": [
+        {
+          "leetcodeNumber": 242,
+          "title": "Valid Anagram",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-anagram/"
+        },
+        {
+          "leetcodeNumber": 387,
+          "title": "First Unique Character in a String",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/first-unique-character-in-a-string/"
+        },
+        {
+          "leetcodeNumber": 383,
+          "title": "Ransom Note",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/ransom-note/"
+        },
+        {
+          "leetcodeNumber": 389,
+          "title": "Find the Difference",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-difference/"
+        },
+        {
+          "leetcodeNumber": 771,
+          "title": "Jewels and Stones",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/jewels-and-stones/"
+        },
+        {
+          "leetcodeNumber": 1002,
+          "title": "Find Common Characters",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/find-common-characters/"
+        },
+        {
+          "leetcodeNumber": 1207,
+          "title": "Unique Number of Occurrences",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/unique-number-of-occurrences/"
+        },
+        {
+          "leetcodeNumber": 1189,
+          "title": "Maximum Number of Balloons",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-number-of-balloons/"
+        },
+        {
+          "leetcodeNumber": 451,
+          "title": "Sort Characters By Frequency",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-characters-by-frequency/"
+        },
+        {
+          "leetcodeNumber": 692,
+          "title": "Top K Frequent Words",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-words/"
+        }
+      ]
+    },
+    {
+      "id": "two-pointer-strings",
+      "name": "Two Pointer Strings",
+      "description": "Use two pointers to compare, reverse, or process strings efficiently.",
+      "recognitionClues": [
+        "Palindrome",
+        "Reverse",
+        "Compare",
+        "Ends moving inward",
+        "Two indices"
+      ],
+      "prerequisites": [
+        "Character Frequency"
+      ],
+      "commonMistakes": [
+        "Skipping non-alphanumeric incorrectly",
+        "Wrong pointer movement"
+      ],
+      "estimatedProblems": 15,
+      "problems": [
+        {
+          "leetcodeNumber": 125,
+          "title": "Valid Palindrome",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome/"
+        },
+        {
+          "leetcodeNumber": 344,
+          "title": "Reverse String",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/reverse-string/"
+        },
+        {
+          "leetcodeNumber": 345,
+          "title": "Reverse Vowels of a String",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/reverse-vowels-of-a-string/"
+        },
+        {
+          "leetcodeNumber": 392,
+          "title": "Is Subsequence",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/is-subsequence/"
+        },
+        {
+          "leetcodeNumber": 680,
+          "title": "Valid Palindrome II",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome-ii/"
+        },
+        {
+          "leetcodeNumber": 844,
+          "title": "Backspace String Compare",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/backspace-string-compare/"
+        }
+      ]
+    },
+    {
+      "id": "string-sliding-window",
+      "name": "Sliding Window",
+      "description": "One of the most important string interview patterns involving substrings and contiguous windows.",
+      "recognitionClues": [
+        "Substring",
+        "Longest",
+        "Minimum Window",
+        "K Distinct",
+        "Without Repeating Characters"
+      ],
+      "prerequisites": [
+        "Two Pointer Strings"
+      ],
+      "commonMistakes": [
+        "Wrong shrinking condition",
+        "Not updating answer",
+        "Duplicate handling"
+      ],
+      "estimatedProblems": 20,
+      "problems": [
+        {
+          "leetcodeNumber": 3,
+          "title": "Longest Substring Without Repeating Characters",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+        },
+        {
+          "leetcodeNumber": 76,
+          "title": "Minimum Window Substring",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-window-substring/"
+        },
+        {
+          "leetcodeNumber": 159,
+          "title": "Longest Substring with At Most Two Distinct Characters",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/"
+        },
+        {
+          "leetcodeNumber": 340,
+          "title": "Longest Substring with At Most K Distinct Characters",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/"
+        },
+        {
+          "leetcodeNumber": 424,
+          "title": "Longest Repeating Character Replacement",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+        },
+        {
+          "leetcodeNumber": 438,
+          "title": "Find All Anagrams in a String",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-all-anagrams-in-a-string/"
+        },
+        {
+          "leetcodeNumber": 567,
+          "title": "Permutation in String",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/permutation-in-string/"
+        }
+      ]
+    },
+    {
+      "id": "palindrome",
+      "name": "Palindrome",
+      "description": "Palindrome problems involve checking symmetry, expanding around the center, or using dynamic programming to process palindromic substrings.",
+      "recognitionClues": [
+        "Palindrome",
+        "Symmetric String",
+        "Reverse Comparison",
+        "Longest Palindrome",
+        "Substring"
+      ],
+      "prerequisites": [
+        "Two Pointer Strings"
+      ],
+      "commonMistakes": [
+        "Ignoring odd/even length palindromes",
+        "Incorrect center expansion",
+        "Not skipping non-alphanumeric characters"
+      ],
+      "estimatedProblems": 12,
+      "problems": [
+        {
+          "leetcodeNumber": 5,
+          "title": "Longest Palindromic Substring",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-palindromic-substring/"
+        },
+        {
+          "leetcodeNumber": 9,
+          "title": "Palindrome Number",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/palindrome-number/"
+        },
+        {
+          "leetcodeNumber": 125,
+          "title": "Valid Palindrome",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome/"
+        },
+        {
+          "leetcodeNumber": 131,
+          "title": "Palindrome Partitioning",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/palindrome-partitioning/"
+        },
+        {
+          "leetcodeNumber": 214,
+          "title": "Shortest Palindrome",
+          "difficulty": "Hard",
+          "serviceImportance": 2,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/shortest-palindrome/"
+        },
+        {
+          "leetcodeNumber": 409,
+          "title": "Longest Palindrome",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-palindrome/"
+        },
+        {
+          "leetcodeNumber": 647,
+          "title": "Palindromic Substrings",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/palindromic-substrings/"
+        },
+        {
+          "leetcodeNumber": 680,
+          "title": "Valid Palindrome II",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome-ii/"
+        }
+      ]
+    },
+    {
+      "id": "anagram",
+      "name": "Anagram",
+      "description": "Anagram problems focus on comparing character frequencies, grouping similar words, and identifying permutations.",
+      "recognitionClues": [
+        "Same Characters",
+        "Rearranged String",
+        "Group Words",
+        "Permutation"
+      ],
+      "prerequisites": [
+        "Character Frequency"
+      ],
+      "commonMistakes": [
+        "Sorting unnecessarily",
+        "Frequency mismatch",
+        "Ignoring duplicate counts"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 49,
+          "title": "Group Anagrams",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/group-anagrams/"
+        },
+        {
+          "leetcodeNumber": 242,
+          "title": "Valid Anagram",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-anagram/"
+        },
+        {
+          "leetcodeNumber": 438,
+          "title": "Find All Anagrams in a String",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-all-anagrams-in-a-string/"
+        },
+        {
+          "leetcodeNumber": 567,
+          "title": "Permutation in String",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/permutation-in-string/"
+        },
+        {
+          "leetcodeNumber": 1347,
+          "title": "Minimum Number of Steps to Make Two Strings Anagram",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/"
+        },
+        {
+          "leetcodeNumber": 2186,
+          "title": "Minimum Number of Steps to Make Two Strings Anagram II",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/"
+        }
+      ]
+    },
+    {
+      "id": "hashing",
+      "name": "Hashing",
+      "description": "Hashing enables O(1) average lookup and is one of the most important techniques for string interview problems.",
+      "recognitionClues": [
+        "HashMap",
+        "HashSet",
+        "Visited",
+        "Duplicate",
+        "Lookup",
+        "Frequency"
+      ],
+      "prerequisites": [
+        "Character Frequency"
+      ],
+      "commonMistakes": [
+        "Wrong key selection",
+        "Hash collisions",
+        "Not updating frequencies"
+      ],
+      "estimatedProblems": 12,
+      "problems": [
+        {
+          "leetcodeNumber": 3,
+          "title": "Longest Substring Without Repeating Characters",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+        },
+        {
+          "leetcodeNumber": 49,
+          "title": "Group Anagrams",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/group-anagrams/"
+        },
+        {
+          "leetcodeNumber": 187,
+          "title": "Repeated DNA Sequences",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/repeated-dna-sequences/"
+        },
+        {
+          "leetcodeNumber": 205,
+          "title": "Isomorphic Strings",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/isomorphic-strings/"
+        },
+        {
+          "leetcodeNumber": 290,
+          "title": "Word Pattern",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/word-pattern/"
+        },
+        {
+          "leetcodeNumber": 389,
+          "title": "Find the Difference",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-difference/"
+        },
+        {
+          "leetcodeNumber": 771,
+          "title": "Jewels and Stones",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/jewels-and-stones/"
+        },
+        {
+          "leetcodeNumber": 859,
+          "title": "Buddy Strings",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/buddy-strings/"
+        }
+      ]
+    },
+    {
+      "id": "prefix-function",
+      "name": "Prefix Function (LPS)",
+      "description": "Learn the Longest Prefix Suffix (LPS) array which is the foundation of KMP string matching.",
+      "recognitionClues": [
+        "Longest Prefix Suffix",
+        "Repeated Pattern",
+        "Pattern Matching",
+        "KMP"
+      ],
+      "prerequisites": [
+        "Character Frequency",
+        "Strings"
+      ],
+      "commonMistakes": [
+        "Wrong LPS transitions",
+        "Incorrect fallback",
+        "Off-by-one errors"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 459,
+          "title": "Repeated Substring Pattern",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/repeated-substring-pattern/"
+        },
+        {
+          "leetcodeNumber": 686,
+          "title": "Repeated String Match",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/repeated-string-match/"
+        },
+        {
+          "leetcodeNumber": 1392,
+          "title": "Longest Happy Prefix",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-happy-prefix/"
+        }
+      ]
+    },
+    {
+      "id": "kmp",
+      "name": "Knuth-Morris-Pratt (KMP)",
+      "description": "Master one of the most important pattern matching algorithms used in interviews.",
+      "recognitionClues": [
+        "Pattern Matching",
+        "Substring Search",
+        "Repeated Pattern",
+        "String Search"
+      ],
+      "prerequisites": [
+        "Prefix Function"
+      ],
+      "commonMistakes": [
+        "Incorrect LPS computation",
+        "Wrong fallback index",
+        "Infinite loop"
+      ],
+      "estimatedProblems": 7,
+      "problems": [
+        {
+          "leetcodeNumber": 28,
+          "title": "Find the Index of the First Occurrence in a String",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+        },
+        {
+          "leetcodeNumber": 459,
+          "title": "Repeated Substring Pattern",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/repeated-substring-pattern/"
+        },
+        {
+          "leetcodeNumber": 686,
+          "title": "Repeated String Match",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/repeated-string-match/"
+        },
+        {
+          "leetcodeNumber": 1392,
+          "title": "Longest Happy Prefix",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-happy-prefix/"
+        }
+      ]
+    },
+    {
+      "id": "z-algorithm",
+      "name": "Z Algorithm",
+      "description": "The Z Algorithm computes longest substring matches starting from every index. Useful for advanced string matching.",
+      "recognitionClues": [
+        "Pattern Matching",
+        "Longest Prefix",
+        "Efficient Matching",
+        "String Algorithms"
+      ],
+      "prerequisites": [
+        "Prefix Function"
+      ],
+      "commonMistakes": [
+        "Wrong Z-box update",
+        "Incorrect left/right pointers"
+      ],
+      "estimatedProblems": 2,
+      "problems": [
+        {
+          "leetcodeNumber": 28,
+          "title": "Find the Index of the First Occurrence in a String",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+        },
+        {
+          "leetcodeNumber": 1392,
+          "title": "Longest Happy Prefix",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-happy-prefix/"
+        }
+      ]
+    },
+    {
+      "id": "rolling-hash",
+      "name": "Rolling Hash",
+      "description": "Rolling Hash efficiently compares substrings using hash values. It is commonly combined with Binary Search and Rabin-Karp.",
+      "recognitionClues": [
+        "Substring Comparison",
+        "Duplicate Substring",
+        "Longest Duplicate",
+        "Hash"
+      ],
+      "prerequisites": [
+        "Hashing"
+      ],
+      "commonMistakes": [
+        "Hash collisions",
+        "Modulo mistakes",
+        "Overflow"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 1044,
+          "title": "Longest Duplicate Substring",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-duplicate-substring/"
+        },
+        {
+          "leetcodeNumber": 1062,
+          "title": "Longest Repeating Substring",
+          "difficulty": "Medium",
+          "serviceImportance": 2,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-repeating-substring/"
+        },
+        {
+          "leetcodeNumber": 214,
+          "title": "Shortest Palindrome",
+          "difficulty": "Hard",
+          "serviceImportance": 2,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/shortest-palindrome/"
+        }
+      ]
+    },
+    {
+      "id": "rabin-karp",
+      "name": "Rabin-Karp",
+      "description": "Rabin-Karp combines rolling hash with efficient pattern matching for string search.",
+      "recognitionClues": [
+        "Pattern Matching",
+        "String Search",
+        "Hash Comparison",
+        "Multiple Patterns"
+      ],
+      "prerequisites": [
+        "Rolling Hash"
+      ],
+      "commonMistakes": [
+        "Ignoring collisions",
+        "Incorrect hash updates"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 28,
+          "title": "Find the Index of the First Occurrence in a String",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/"
+        },
+        {
+          "leetcodeNumber": 1044,
+          "title": "Longest Duplicate Substring",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-duplicate-substring/"
+        },
+        {
+          "leetcodeNumber": 1062,
+          "title": "Longest Repeating Substring",
+          "difficulty": "Medium",
+          "serviceImportance": 2,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-repeating-substring/"
+        }
+      ]
+    },
+    {
+      "id": "trie-basics",
+      "name": "Trie Basics",
+      "description": "Trie stores strings efficiently for prefix-based searching, autocomplete, dictionary lookup and word search.",
+      "recognitionClues": [
+        "Dictionary",
+        "Prefix",
+        "Autocomplete",
+        "Word Search",
+        "Starts With"
+      ],
+      "prerequisites": [
+        "Strings"
+      ],
+      "commonMistakes": [
+        "Not marking end of word",
+        "Incorrect child indexing",
+        "Memory inefficiency"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 208,
+          "title": "Implement Trie (Prefix Tree)",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+        },
+        {
+          "leetcodeNumber": 211,
+          "title": "Design Add and Search Words Data Structure",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+        },
+        {
+          "leetcodeNumber": 212,
+          "title": "Word Search II",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/word-search-ii/"
+        },
+        {
+          "leetcodeNumber": 648,
+          "title": "Replace Words",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/replace-words/"
+        },
+        {
+          "leetcodeNumber": 677,
+          "title": "Map Sum Pairs",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/map-sum-pairs/"
+        },
+        {
+          "leetcodeNumber": 720,
+          "title": "Longest Word in Dictionary",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-word-in-dictionary/"
+        }
+      ]
+    },
+    {
+      "id": "string-dp",
+      "name": "String DP",
+      "description": "Dynamic Programming on strings involving subsequences, edit distance and palindrome transformations.",
+      "recognitionClues": [
+        "Minimum Operations",
+        "Edit Distance",
+        "Subsequence",
+        "Longest Common"
+      ],
+      "prerequisites": [
+        "Dynamic Programming"
+      ],
+      "commonMistakes": [
+        "Wrong DP transitions",
+        "Incorrect base cases"
+      ],
+      "estimatedProblems": 15,
+      "problems": [
+        {
+          "leetcodeNumber": 72,
+          "title": "Edit Distance",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/edit-distance/"
+        },
+        {
+          "leetcodeNumber": 97,
+          "title": "Interleaving String",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/interleaving-string/"
+        },
+        {
+          "leetcodeNumber": 516,
+          "title": "Longest Palindromic Subsequence",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-palindromic-subsequence/"
+        },
+        {
+          "leetcodeNumber": 583,
+          "title": "Delete Operation for Two Strings",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/delete-operation-for-two-strings/"
+        },
+        {
+          "leetcodeNumber": 1143,
+          "title": "Longest Common Subsequence",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-common-subsequence/"
+        }
+      ]
+    },
+    {
+      "id": "parsing",
+      "name": "Parsing",
+      "description": "Convert formatted strings into structured information while handling edge cases.",
+      "recognitionClues": [
+        "Parse",
+        "Split",
+        "Token",
+        "Format",
+        "Convert"
+      ],
+      "prerequisites": [
+        "Strings"
+      ],
+      "commonMistakes": [
+        "Ignoring spaces",
+        "Overflow",
+        "Invalid formats"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 8,
+          "title": "String to Integer (atoi)",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/string-to-integer-atoi/"
+        },
+        {
+          "leetcodeNumber": 65,
+          "title": "Valid Number",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-number/"
+        },
+        {
+          "leetcodeNumber": 71,
+          "title": "Simplify Path",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/simplify-path/"
+        },
+        {
+          "leetcodeNumber": 537,
+          "title": "Complex Number Multiplication",
+          "difficulty": "Medium",
+          "serviceImportance": 2,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/complex-number-multiplication/"
+        }
+      ]
+    },
+    {
+      "id": "string-simulation",
+      "name": "Simulation",
+      "description": "Simulate string transformations exactly as described. These problems test implementation skills and attention to detail.",
+      "recognitionClues": [
+        "Transform String",
+        "Perform Operations",
+        "Simulate",
+        "Replace Characters",
+        "Build Output"
+      ],
+      "prerequisites": [
+        "Basic Strings"
+      ],
+      "commonMistakes": [
+        "Wrong simulation order",
+        "Missing edge cases",
+        "Incorrect index updates"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 6,
+          "title": "Zigzag Conversion",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/zigzag-conversion/"
+        },
+        {
+          "leetcodeNumber": 38,
+          "title": "Count and Say",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/count-and-say/"
+        },
+        {
+          "leetcodeNumber": 415,
+          "title": "Add Strings",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/add-strings/"
+        },
+        {
+          "leetcodeNumber": 443,
+          "title": "String Compression",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/string-compression/"
+        },
+        {
+          "leetcodeNumber": 482,
+          "title": "License Key Formatting",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/license-key-formatting/"
+        },
+        {
+          "leetcodeNumber": 824,
+          "title": "Goat Latin",
+          "difficulty": "Easy",
+          "serviceImportance": 2,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/goat-latin/"
+        }
+      ]
+    },
+    {
+      "id": "regex",
+      "name": "Regex",
+      "description": "Regex and wildcard matching problems involving pattern matching with special characters.",
+      "recognitionClues": [
+        "Regex",
+        "Wildcard",
+        "Pattern Matching",
+        "Special Characters",
+        "Expression Matching"
+      ],
+      "prerequisites": [
+        "Dynamic Programming"
+      ],
+      "commonMistakes": [
+        "Incorrect '*' handling",
+        "Wrong recursion",
+        "Ignoring empty string"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 10,
+          "title": "Regular Expression Matching",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/regular-expression-matching/"
+        },
+        {
+          "leetcodeNumber": 44,
+          "title": "Wildcard Matching",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/wildcard-matching/"
+        },
+        {
+          "leetcodeNumber": 65,
+          "title": "Valid Number",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-number/"
+        }
+      ]
+    },
+    {
+      "id": "encoding-decoding",
+      "name": "Encoding & Decoding",
+      "description": "Convert strings between different representations while preserving information.",
+      "recognitionClues": [
+        "Encode",
+        "Decode",
+        "Serialize",
+        "Deserialize",
+        "Compression"
+      ],
+      "prerequisites": [
+        "Simulation"
+      ],
+      "commonMistakes": [
+        "Delimiter conflicts",
+        "Incorrect parsing",
+        "Ignoring empty strings"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 271,
+          "title": "Encode and Decode Strings",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/encode-and-decode-strings/"
+        },
+        {
+          "leetcodeNumber": 394,
+          "title": "Decode String",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/decode-string/"
+        },
+        {
+          "leetcodeNumber": 535,
+          "title": "Encode and Decode TinyURL",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/encode-and-decode-tinyurl/"
+        },
+        {
+          "leetcodeNumber": 880,
+          "title": "Decoded String at Index",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/decoded-string-at-index/"
+        }
+      ]
+    },
+    {
+      "id": "lexicographical",
+      "name": "Lexicographical Problems",
+      "description": "Problems involving dictionary order, smallest or largest string formation, and lexicographical comparison.",
+      "recognitionClues": [
+        "Dictionary Order",
+        "Smallest String",
+        "Largest String",
+        "Lexicographical Comparison",
+        "Next Permutation"
+      ],
+      "prerequisites": [
+        "Sorting",
+        "Strings"
+      ],
+      "commonMistakes": [
+        "Wrong character comparison",
+        "Ignoring prefix cases",
+        "Incorrect ordering"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 31,
+          "title": "Next Permutation",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/next-permutation/"
+        },
+        {
+          "leetcodeNumber": 179,
+          "title": "Largest Number",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/largest-number/"
+        },
+        {
+          "leetcodeNumber": 316,
+          "title": "Remove Duplicate Letters",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-duplicate-letters/"
+        },
+        {
+          "leetcodeNumber": 402,
+          "title": "Remove K Digits",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-k-digits/"
+        },
+        {
+          "leetcodeNumber": 899,
+          "title": "Orderly Queue",
+          "difficulty": "Hard",
+          "serviceImportance": 2,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/orderly-queue/"
+        },
+        {
+          "leetcodeNumber": 1163,
+          "title": "Last Substring in Lexicographical Order",
+          "difficulty": "Hard",
+          "serviceImportance": 2,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/last-substring-in-lexicographical-order/"
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,2194 @@
+{
+  "id": "arrays",
+  "title": "Arrays",
+  "description": "Master Arrays from beginner to advanced.",
+  "patterns": [
+    {
+      "id": "array-traversal",
+      "name": "Traversal",
+      "description": "Learn to iterate through arrays efficiently to find, count, update, compare, and manipulate elements. Traversal is the foundation for almost every array problem.",
+      "recognitionClues": [
+        "Traverse every element",
+        "Find maximum or minimum",
+        "Count occurrences",
+        "Replace values",
+        "Update elements",
+        "Print array",
+        "Scan entire array",
+        "Find first or last occurrence"
+      ],
+      "prerequisites": [
+        "Basic Arrays",
+        "Loops"
+      ],
+      "commonMistakes": [
+        "Off-by-one errors",
+        "Index out of bounds",
+        "Incorrect loop condition",
+        "Ignoring empty arrays"
+      ],
+      "estimatedProblems": 22,
+      "problems": [
+        {
+          "leetcodeNumber": 1,
+          "title": "Two Sum",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "Google",
+            "Meta",
+            "Adobe",
+            "Oracle",
+            "TCS",
+            "Infosys",
+            "Capgemini"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/two-sum/"
+        },
+        {
+          "leetcodeNumber": 26,
+          "title": "Remove Duplicates from Sorted Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "Google",
+            "TCS",
+            "Infosys"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 27,
+          "title": "Remove Element",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 3,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "TCS",
+            "Infosys",
+            "Capgemini"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/remove-element/"
+        },
+        {
+          "leetcodeNumber": 35,
+          "title": "Search Insert Position",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 3,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "Oracle",
+            "TCS"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/search-insert-position/"
+        },
+        {
+          "leetcodeNumber": 53,
+          "title": "Maximum Subarray",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "companies": [
+            "Amazon",
+            "Google",
+            "Meta",
+            "Microsoft",
+            "Adobe",
+            "Uber"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/"
+        },
+        {
+          "leetcodeNumber": 66,
+          "title": "Plus One",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 2,
+          "companies": [
+            "Google",
+            "Amazon",
+            "TCS"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/plus-one/"
+        },
+        {
+          "leetcodeNumber": 88,
+          "title": "Merge Sorted Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "Google",
+            "Apple"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/merge-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 121,
+          "title": "Best Time to Buy and Sell Stock",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "companies": [
+            "Amazon",
+            "Google",
+            "Meta",
+            "Microsoft",
+            "Goldman Sachs"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+        },
+        {
+          "leetcodeNumber": 136,
+          "title": "Single Number",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "Adobe"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/single-number/"
+        },
+        {
+          "leetcodeNumber": 905,
+          "title": "Sort Array By Parity",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-array-by-parity/"
+        },
+        {
+          "leetcodeNumber": 169,
+          "title": "Majority Element",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "Google",
+            "Meta"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/majority-element/"
+        },
+        {
+          "leetcodeNumber": 189,
+          "title": "Rotate Array",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "companies": [
+            "Amazon",
+            "Google",
+            "Microsoft"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/rotate-array/"
+        },
+        {
+          "leetcodeNumber": 217,
+          "title": "Contains Duplicate",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "Google"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate/"
+        },
+        {
+          "leetcodeNumber": 219,
+          "title": "Contains Duplicate II",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "companies": [
+            "Amazon",
+            "Microsoft"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate-ii/"
+        },
+        {
+          "leetcodeNumber": 228,
+          "title": "Summary Ranges",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 2,
+          "companies": [
+            "Google"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/summary-ranges/"
+        },
+        {
+          "leetcodeNumber": 268,
+          "title": "Missing Number",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "companies": [
+            "Amazon",
+            "Microsoft",
+            "Google"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/missing-number/"
+        },
+        {
+          "leetcodeNumber": 414,
+          "title": "Third Maximum Number",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 2,
+          "companies": [
+            "Amazon"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/third-maximum-number/"
+        },
+        {
+          "leetcodeNumber": 448,
+          "title": "Find All Numbers Disappeared in an Array",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "companies": [
+            "Google",
+            "Amazon"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/"
+        },
+        {
+          "leetcodeNumber": 485,
+          "title": "Max Consecutive Ones",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "companies": [
+            "Microsoft"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones/"
+        },
+        {
+          "leetcodeNumber": 724,
+          "title": "Find Pivot Index",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "companies": [
+            "Amazon",
+            "Microsoft"
+          ],
+          "leetcodeUrl": "https://leetcode.com/problems/find-pivot-index/"
+        }
+      ]
+
+    },
+    {
+      "id": "frequency-array",
+      "name": "Frequency Array",
+      "description": "Count occurrences of elements using arrays or hash maps. This pattern is frequently used in counting, duplicates, anagrams and missing number problems.",
+      "recognitionClues": [
+        "Count frequency",
+        "Find duplicates",
+        "Unique elements",
+        "Missing elements",
+        "Character count",
+        "Repeated values"
+      ],
+      "prerequisites": [
+        "Arrays",
+        "Traversal"
+      ],
+      "commonMistakes": [
+        "Using wrong array size",
+        "Ignoring negative numbers",
+        "Not initializing frequency array"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 217,
+          "title": "Contains Duplicate",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate/"
+        },
+        {
+          "leetcodeNumber": 219,
+          "title": "Contains Duplicate II",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate-ii/"
+        },
+        {
+          "leetcodeNumber": 242,
+          "title": "Valid Anagram",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-anagram/"
+        },
+        {
+          "leetcodeNumber": 349,
+          "title": "Intersection of Two Arrays",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-arrays/"
+        },
+        {
+          "leetcodeNumber": 350,
+          "title": "Intersection of Two Arrays II",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-arrays-ii/"
+        },
+        {
+          "leetcodeNumber": 387,
+          "title": "First Unique Character in a String",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/first-unique-character-in-a-string/"
+        },
+        {
+          "leetcodeNumber": 448,
+          "title": "Find All Numbers Disappeared in an Array",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/"
+        },
+        {
+          "leetcodeNumber": 645,
+          "title": "Set Mismatch",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/set-mismatch/"
+        },
+        {
+          "leetcodeNumber": 1207,
+          "title": "Unique Number of Occurrences",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/unique-number-of-occurrences/"
+        },
+        {
+          "leetcodeNumber": 2351,
+          "title": "First Letter to Appear Twice",
+          "difficulty": "Easy",
+          "serviceImportance": 2,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/first-letter-to-appear-twice/"
+        }
+      ]
+    },
+    {
+      "id": "counting",
+      "name": "Counting",
+      "description": "Problems that require counting occurrences, consecutive values, or maintaining running counts.",
+      "recognitionClues": [
+        "Count",
+        "Maximum consecutive",
+        "Frequency",
+        "Occurrences",
+        "Majority"
+      ],
+      "prerequisites": [
+        "Traversal",
+        "HashMap"
+      ],
+      "commonMistakes": [
+        "Off-by-one in counts",
+        "Not resetting counters",
+        "Integer overflow"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 169,
+          "title": "Majority Element",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/majority-element/"
+        },
+        {
+          "leetcodeNumber": 229,
+          "title": "Majority Element II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/majority-element-ii/"
+        },
+        {
+          "leetcodeNumber": 485,
+          "title": "Max Consecutive Ones",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones/"
+        },
+        {
+          "leetcodeNumber": 487,
+          "title": "Max Consecutive Ones II",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones-ii/"
+        },
+        {
+          "leetcodeNumber": 1004,
+          "title": "Max Consecutive Ones III",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+        },
+        {
+          "leetcodeNumber": 594,
+          "title": "Longest Harmonious Subsequence",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-harmonious-subsequence/"
+        },
+        {
+          "leetcodeNumber": 697,
+          "title": "Degree of an Array",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/degree-of-an-array/"
+        },
+        {
+          "leetcodeNumber": 914,
+          "title": "X of a Kind in a Deck of Cards",
+          "difficulty": "Easy",
+          "serviceImportance": 2,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/x-of-a-kind-in-a-deck-of-cards/"
+        }
+      ]
+    },
+    {
+      "id": "simulation",
+      "name": "Simulation",
+      "description": "Simulate the operations exactly as described in the problem. These problems focus on implementing the process rather than discovering a mathematical shortcut.",
+      "recognitionClues": [
+        "Follow given operations",
+        "Process step by step",
+        "Array updates",
+        "State changes"
+      ],
+      "prerequisites": [
+        "Traversal"
+      ],
+      "commonMistakes": [
+        "Skipping edge cases",
+        "Incorrect update order",
+        "Modifying array incorrectly"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 66,
+          "title": "Plus One",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/plus-one/"
+        },
+        {
+          "leetcodeNumber": 118,
+          "title": "Pascal's Triangle",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/pascals-triangle/"
+        },
+        {
+          "leetcodeNumber": 119,
+          "title": "Pascal's Triangle II",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/pascals-triangle-ii/"
+        },
+        {
+          "leetcodeNumber": 59,
+          "title": "Spiral Matrix II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix-ii/"
+        },
+        {
+          "leetcodeNumber": 54,
+          "title": "Spiral Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix/"
+        },
+        {
+          "leetcodeNumber": 48,
+          "title": "Rotate Image",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/rotate-image/"
+        },
+        {
+          "leetcodeNumber": 73,
+          "title": "Set Matrix Zeroes",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/set-matrix-zeroes/"
+        },
+        {
+          "leetcodeNumber": 289,
+          "title": "Game of Life",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/game-of-life/"
+        }
+      ]
+    },
+    {
+      "id": "rotation",
+      "name": "Rotation",
+      "description": "Problems involving rotating arrays or matrices either left, right, or by a given number of positions.",
+      "recognitionClues": [
+        "Rotate array",
+        "Rotate matrix",
+        "Circular movement",
+        "Shift elements"
+      ],
+      "prerequisites": [
+        "Traversal",
+        "Simulation"
+      ],
+      "commonMistakes": [
+        "Forgetting modulo",
+        "Wrong reverse order",
+        "Extra space usage"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 189,
+          "title": "Rotate Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/rotate-array/"
+        },
+        {
+          "leetcodeNumber": 48,
+          "title": "Rotate Image",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/rotate-image/"
+        },
+        {
+          "leetcodeNumber": 61,
+          "title": "Rotate List",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/rotate-list/"
+        },
+        {
+          "leetcodeNumber": 798,
+          "title": "Smallest Rotation with Highest Score",
+          "difficulty": "Hard",
+          "serviceImportance": 2,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/smallest-rotation-with-highest-score/"
+        },
+        {
+          "leetcodeNumber": 1914,
+          "title": "Cyclically Rotating a Grid",
+          "difficulty": "Medium",
+          "serviceImportance": 2,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/cyclically-rotating-a-grid/"
+        }
+      ]
+    },
+    {
+      "id": "in-place-modification",
+      "name": "In-place Modification",
+      "description": "Modify arrays without using additional memory. Frequently asked in interviews due to space optimization.",
+      "recognitionClues": [
+        "Modify array in-place",
+        "Without extra space",
+        "Overwrite elements",
+        "Shift values"
+      ],
+      "prerequisites": [
+        "Traversal"
+      ],
+      "commonMistakes": [
+        "Overwriting useful data",
+        "Incorrect pointer movement"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 26,
+          "title": "Remove Duplicates from Sorted Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 27,
+          "title": "Remove Element",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-element/"
+        },
+        {
+          "leetcodeNumber": 80,
+          "title": "Remove Duplicates from Sorted Array II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/"
+        },
+        {
+          "leetcodeNumber": 88,
+          "title": "Merge Sorted Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/merge-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 283,
+          "title": "Move Zeroes",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/move-zeroes/"
+        },
+        {
+          "leetcodeNumber": 905,
+          "title": "Sort Array By Parity",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-array-by-parity/"
+        },
+        {
+          "leetcodeNumber": 922,
+          "title": "Sort Array By Parity II",
+          "difficulty": "Easy",
+          "serviceImportance": 2,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-array-by-parity-ii/"
+        },
+        {
+          "leetcodeNumber": 1089,
+          "title": "Duplicate Zeros",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/duplicate-zeros/"
+        }
+      ]
+    },
+    {
+      "id": "sorting-applications",
+      "name": "Sorting Applications",
+      "description": "Sorting is often used as preprocessing to simplify problems involving intervals, duplicates, greediness and ordering.",
+      "recognitionClues": [
+        "Sort first",
+        "Intervals",
+        "Custom ordering",
+        "Kth largest"
+      ],
+      "prerequisites": [
+        "Arrays"
+      ],
+      "commonMistakes": [
+        "Forgetting custom comparator",
+        "Sorting unnecessarily",
+        "Wrong interval merging"
+      ],
+      "estimatedProblems": 12,
+      "problems": [
+        {
+          "leetcodeNumber": 56,
+          "title": "Merge Intervals",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/merge-intervals/"
+        },
+        {
+          "leetcodeNumber": 57,
+          "title": "Insert Interval",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/insert-interval/"
+        },
+        {
+          "leetcodeNumber": 75,
+          "title": "Sort Colors",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-colors/"
+        },
+        {
+          "leetcodeNumber": 88,
+          "title": "Merge Sorted Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/merge-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 179,
+          "title": "Largest Number",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/largest-number/"
+        },
+        {
+          "leetcodeNumber": 215,
+          "title": "Kth Largest Element in an Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+        },
+        {
+          "leetcodeNumber": 274,
+          "title": "H-Index",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/h-index/"
+        },
+        {
+          "leetcodeNumber": 280,
+          "title": "Wiggle Sort",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/wiggle-sort/"
+        },
+        {
+          "leetcodeNumber": 324,
+          "title": "Wiggle Sort II",
+          "difficulty": "Medium",
+          "serviceImportance": 2,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/wiggle-sort-ii/"
+        },
+        {
+          "leetcodeNumber": 414,
+          "title": "Third Maximum Number",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/third-maximum-number/"
+        },
+        {
+          "leetcodeNumber": 506,
+          "title": "Relative Ranks",
+          "difficulty": "Easy",
+          "serviceImportance": 2,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/relative-ranks/"
+        },
+        {
+          "leetcodeNumber": 912,
+          "title": "Sort an Array",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-an-array/"
+        }
+      ]
+    },
+    {
+      "id": "two-pointers",
+      "name": "Two Pointers",
+      "description": "Use two indices moving through the array to reduce time complexity from O(n²) to O(n). One of the most important interview patterns.",
+      "recognitionClues": [
+        "Sorted Array",
+        "Find Pair",
+        "Find Triplet",
+        "Opposite Ends",
+        "Merge Two Arrays",
+        "Remove Duplicates",
+        "In-place Modification",
+        "Need O(n) Solution"
+      ],
+      "prerequisites": [
+        "Traversal",
+        "Searching"
+      ],
+      "commonMistakes": [
+        "Moving wrong pointer",
+        "Not handling duplicates",
+        "Wrong loop condition",
+        "Missing edge cases"
+      ],
+      "estimatedProblems": 20,
+      "problems": [
+        {
+          "leetcodeNumber": 11,
+          "title": "Container With Most Water",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/container-with-most-water/"
+        },
+        {
+          "leetcodeNumber": 905,
+          "title": "Sort Array By Parity",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-array-by-parity/"
+        },
+        {
+          "leetcodeNumber": 15,
+          "title": "3Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/3sum/"
+        },
+        {
+          "leetcodeNumber": 16,
+          "title": "3Sum Closest",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/3sum-closest/"
+        },
+        {
+          "leetcodeNumber": 18,
+          "title": "4Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/4sum/"
+        },
+        {
+          "leetcodeNumber": 26,
+          "title": "Remove Duplicates from Sorted Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 27,
+          "title": "Remove Element",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-element/"
+        },
+        {
+          "leetcodeNumber": 42,
+          "title": "Trapping Rain Water",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/trapping-rain-water/"
+        },
+        {
+          "leetcodeNumber": 75,
+          "title": "Sort Colors",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-colors/"
+        },
+        {
+          "leetcodeNumber": 80,
+          "title": "Remove Duplicates from Sorted Array II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/"
+        },
+        {
+          "leetcodeNumber": 88,
+          "title": "Merge Sorted Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/merge-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 125,
+          "title": "Valid Palindrome",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome/"
+        },
+        {
+          "leetcodeNumber": 167,
+          "title": "Two Sum II - Input Array Is Sorted",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
+        },
+        {
+          "leetcodeNumber": 283,
+          "title": "Move Zeroes",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/move-zeroes/"
+        },
+        {
+          "leetcodeNumber": 344,
+          "title": "Reverse String",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/reverse-string/"
+        },
+        {
+          "leetcodeNumber": 392,
+          "title": "Is Subsequence",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/is-subsequence/"
+        },
+        {
+          "leetcodeNumber": 633,
+          "title": "Sum of Square Numbers",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/sum-of-square-numbers/"
+        },
+        {
+          "leetcodeNumber": 844,
+          "title": "Backspace String Compare",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/backspace-string-compare/"
+        },
+        {
+          "leetcodeNumber": 881,
+          "title": "Boats to Save People",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/boats-to-save-people/"
+        },
+        {
+          "leetcodeNumber": 977,
+          "title": "Squares of a Sorted Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/squares-of-a-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 986,
+          "title": "Interval List Intersections",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/interval-list-intersections/"
+        }
+      ]
+    },
+    {
+      "id": "sliding-window",
+      "name": "Sliding Window",
+      "description": "Sliding Window optimizes problems involving contiguous subarrays or substrings by maintaining a moving window instead of recalculating every range.",
+      "recognitionClues": [
+        "Longest Subarray",
+        "Shortest Subarray",
+        "Contiguous",
+        "Maximum Window",
+        "Minimum Window",
+        "K Consecutive Elements",
+        "Substring"
+      ],
+      "prerequisites": [
+        "Traversal",
+        "Two Pointers"
+      ],
+      "commonMistakes": [
+        "Expanding instead of shrinking",
+        "Forgetting window updates",
+        "Wrong condition for shrinking",
+        "Not handling duplicates"
+      ],
+      "estimatedProblems": 25,
+      "problems": [
+        {
+          "leetcodeNumber": 3,
+          "title": "Longest Substring Without Repeating Characters",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+        },
+        {
+          "leetcodeNumber": 76,
+          "title": "Minimum Window Substring",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-window-substring/"
+        },
+        {
+          "leetcodeNumber": 209,
+          "title": "Minimum Size Subarray Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-size-subarray-sum/"
+        },
+        {
+          "leetcodeNumber": 239,
+          "title": "Sliding Window Maximum",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sliding-window-maximum/"
+        },
+        {
+          "leetcodeNumber": 340,
+          "title": "Longest Substring with At Most K Distinct Characters",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/"
+        },
+        {
+          "leetcodeNumber": 424,
+          "title": "Longest Repeating Character Replacement",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+        },
+        {
+          "leetcodeNumber": 438,
+          "title": "Find All Anagrams in a String",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-all-anagrams-in-a-string/"
+        },
+        {
+          "leetcodeNumber": 567,
+          "title": "Permutation in String",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/permutation-in-string/"
+        },
+        {
+          "leetcodeNumber": 643,
+          "title": "Maximum Average Subarray I",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-average-subarray-i/"
+        },
+        {
+          "leetcodeNumber": 713,
+          "title": "Subarray Product Less Than K",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subarray-product-less-than-k/"
+        },
+        {
+          "leetcodeNumber": 904,
+          "title": "Fruit Into Baskets",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/fruit-into-baskets/"
+        },
+        {
+          "leetcodeNumber": 1004,
+          "title": "Max Consecutive Ones III",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones-iii/"
+        },
+        {
+          "leetcodeNumber": 1052,
+          "title": "Grumpy Bookstore Owner",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/grumpy-bookstore-owner/"
+        },
+        {
+          "leetcodeNumber": 1208,
+          "title": "Get Equal Substrings Within Budget",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/get-equal-substrings-within-budget/"
+        },
+        {
+          "leetcodeNumber": 1234,
+          "title": "Replace the Substring for Balanced String",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/replace-the-substring-for-balanced-string/"
+        },
+        {
+          "leetcodeNumber": 1343,
+          "title": "Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/"
+        },
+        {
+          "leetcodeNumber": 1423,
+          "title": "Maximum Points You Can Obtain from Cards",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/"
+        },
+        {
+          "leetcodeNumber": 1456,
+          "title": "Maximum Number of Vowels in a Substring of Given Length",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/"
+        },
+        {
+          "leetcodeNumber": 1493,
+          "title": "Longest Subarray of 1's After Deleting One Element",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/"
+        },
+        {
+          "leetcodeNumber": 1658,
+          "title": "Minimum Operations to Reduce X to Zero",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/"
+        },
+        {
+          "leetcodeNumber": 1838,
+          "title": "Frequency of the Most Frequent Element",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/frequency-of-the-most-frequent-element/"
+        },
+        {
+          "leetcodeNumber": 2024,
+          "title": "Maximize the Confusion of an Exam",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/"
+        }
+      ]
+    },
+    {
+      "id": "prefix-sum",
+      "name": "Prefix Sum",
+      "description": "Prefix Sum enables efficient range sum queries and transforms O(n²) subarray problems into O(n). It is one of the highest-frequency interview patterns.",
+      "recognitionClues": [
+        "Range Sum",
+        "Subarray Sum",
+        "Contiguous Array",
+        "Running Sum",
+        "Need O(n)",
+        "Prefix + HashMap"
+      ],
+      "prerequisites": [
+        "Traversal",
+        "HashMap"
+      ],
+      "commonMistakes": [
+        "Incorrect prefix initialization",
+        "Ignoring prefix sum = 0",
+        "Using Sliding Window for negative numbers"
+      ],
+      "estimatedProblems": 20,
+      "problems": [
+        {
+          "leetcodeNumber": 1480,
+          "title": "Running Sum of 1d Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/running-sum-of-1d-array/"
+        },
+        {
+          "leetcodeNumber": 303,
+          "title": "Range Sum Query - Immutable",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/range-sum-query-immutable/"
+        },
+        {
+          "leetcodeNumber": 304,
+          "title": "Range Sum Query 2D - Immutable",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/range-sum-query-2d-immutable/"
+        },
+        {
+          "leetcodeNumber": 560,
+          "title": "Subarray Sum Equals K",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subarray-sum-equals-k/"
+        },
+        {
+          "leetcodeNumber": 523,
+          "title": "Continuous Subarray Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/continuous-subarray-sum/"
+        },
+        {
+          "leetcodeNumber": 525,
+          "title": "Contiguous Array",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/contiguous-array/"
+        },
+        {
+          "leetcodeNumber": 724,
+          "title": "Find Pivot Index",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/find-pivot-index/"
+        },
+        {
+          "leetcodeNumber": 930,
+          "title": "Binary Subarrays With Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-subarrays-with-sum/"
+        },
+        {
+          "leetcodeNumber": 974,
+          "title": "Subarray Sums Divisible by K",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subarray-sums-divisible-by-k/"
+        },
+        {
+          "leetcodeNumber": 1314,
+          "title": "Matrix Block Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/matrix-block-sum/"
+        },
+        {
+          "leetcodeNumber": 1588,
+          "title": "Sum of All Odd Length Subarrays",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/sum-of-all-odd-length-subarrays/"
+        },
+        {
+          "leetcodeNumber": 2389,
+          "title": "Longest Subsequence With Limited Sum",
+          "difficulty": "Easy",
+          "serviceImportance": 2,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-subsequence-with-limited-sum/"
+        }
+      ]
+    },
+    {
+      "id": "difference-array",
+      "name": "Difference Array",
+      "description": "Difference Array efficiently handles multiple range update operations by updating only the boundaries instead of every element.",
+      "recognitionClues": [
+        "Range Updates",
+        "Increment multiple elements",
+        "Apply many queries",
+        "Difference Array",
+        "Prefix after updates"
+      ],
+      "prerequisites": [
+        "Prefix Sum"
+      ],
+      "commonMistakes": [
+        "Forgetting final prefix computation",
+        "Boundary overflow",
+        "Wrong end index update"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 1094,
+          "title": "Car Pooling",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/car-pooling/"
+        },
+        {
+          "leetcodeNumber": 1109,
+          "title": "Corporate Flight Bookings",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/corporate-flight-bookings/"
+        },
+        {
+          "leetcodeNumber": 2381,
+          "title": "Shifting Letters II",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/shifting-letters-ii/"
+        },
+        {
+          "leetcodeNumber": 370,
+          "title": "Range Addition",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/range-addition/"
+        }
+      ]
+    },
+    {
+      "id": "binary-search",
+      "name": "Binary Search",
+      "description": "Binary Search is one of the highest-frequency interview topics. Learn searching in sorted arrays and variants.",
+      "recognitionClues": [
+        "Sorted Array",
+        "O(log n)",
+        "Search Target",
+        "Find Position",
+        "Lower Bound",
+        "Upper Bound"
+      ],
+      "prerequisites": [
+        "Searching"
+      ],
+      "commonMistakes": [
+        "Infinite loop",
+        "Overflow while calculating mid",
+        "Wrong boundary update"
+      ],
+      "estimatedProblems": 20,
+      "problems": [
+        {
+          "leetcodeNumber": 33,
+          "title": "Search in Rotated Sorted Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 34,
+          "title": "Find First and Last Position of Element in Sorted Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 35,
+          "title": "Search Insert Position",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/search-insert-position/"
+        },
+        {
+          "leetcodeNumber": 69,
+          "title": "Sqrt(x)",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/sqrtx/"
+        },
+        {
+          "leetcodeNumber": 74,
+          "title": "Search a 2D Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/"
+        },
+        {
+          "leetcodeNumber": 81,
+          "title": "Search in Rotated Sorted Array II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/"
+        },
+        {
+          "leetcodeNumber": 153,
+          "title": "Find Minimum in Rotated Sorted Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 154,
+          "title": "Find Minimum in Rotated Sorted Array II",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/"
+        },
+        {
+          "leetcodeNumber": 162,
+          "title": "Find Peak Element",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-peak-element/"
+        },
+        {
+          "leetcodeNumber": 704,
+          "title": "Binary Search",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-search/"
+        }
+      ]
+    },
+    {
+      "id": "binary-search-answer",
+      "name": "Binary Search on Answer",
+      "description": "Binary Search is applied on the answer space instead of array indices. One of the most important product-company interview patterns.",
+      "recognitionClues": [
+        "Minimize Maximum",
+        "Maximize Minimum",
+        "Capacity",
+        "Speed",
+        "Days",
+        "Feasibility Check"
+      ],
+      "prerequisites": [
+        "Binary Search"
+      ],
+      "commonMistakes": [
+        "Wrong search space",
+        "Incorrect feasibility function",
+        "Boundary update errors"
+      ],
+      "estimatedProblems": 18,
+      "problems": [
+        {
+          "leetcodeNumber": 410,
+          "title": "Split Array Largest Sum",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/split-array-largest-sum/"
+        },
+        {
+          "leetcodeNumber": 875,
+          "title": "Koko Eating Bananas",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/koko-eating-bananas/"
+        },
+        {
+          "leetcodeNumber": 1011,
+          "title": "Capacity To Ship Packages Within D Days",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+        },
+        {
+          "leetcodeNumber": 1283,
+          "title": "Find the Smallest Divisor Given a Threshold",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/"
+        },
+        {
+          "leetcodeNumber": 1482,
+          "title": "Minimum Number of Days to Make m Bouquets",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/"
+        },
+        {
+          "leetcodeNumber": 1552,
+          "title": "Magnetic Force Between Two Balls",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/magnetic-force-between-two-balls/"
+        },
+        {
+          "leetcodeNumber": 1760,
+          "title": "Minimum Limit of Balls in a Bag",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/"
+        },
+        {
+          "leetcodeNumber": 2187,
+          "title": "Minimum Time to Complete Trips",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-time-to-complete-trips/"
+        }
+      ]
+    },
+    {
+      "id": "kadanes-algorithm",
+      "name": "Kadane's Algorithm",
+      "description": "Kadane's Algorithm finds the maximum or minimum sum contiguous subarray in linear time. It is one of the most frequently asked interview patterns.",
+      "recognitionClues": [
+        "Maximum Subarray",
+        "Minimum Subarray",
+        "Contiguous",
+        "Largest Sum",
+        "Maximum Profit",
+        "Running Sum"
+      ],
+      "prerequisites": [
+        "Traversal"
+      ],
+      "commonMistakes": [
+        "Resetting sum incorrectly",
+        "Not handling all negative numbers",
+        "Confusing with Sliding Window"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 53,
+          "title": "Maximum Subarray",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/"
+        },
+        {
+          "leetcodeNumber": 918,
+          "title": "Maximum Sum Circular Subarray",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-sum-circular-subarray/"
+        },
+        {
+          "leetcodeNumber": 152,
+          "title": "Maximum Product Subarray",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-product-subarray/"
+        },
+        {
+          "leetcodeNumber": 1749,
+          "title": "Maximum Absolute Sum of Any Subarray",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/"
+        },
+        {
+          "leetcodeNumber": 1191,
+          "title": "K-Concatenation Maximum Sum",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/k-concatenation-maximum-sum/"
+        },
+        {
+          "leetcodeNumber": 689,
+          "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/"
+        }
+      ]
+    },
+    {
+      "id": "intervals",
+      "name": "Intervals",
+      "description": "Interval problems involve merging, inserting, comparing, and scheduling ranges. These are very common in coding interviews.",
+      "recognitionClues": [
+        "Intervals",
+        "Merge",
+        "Schedule",
+        "Overlapping Ranges",
+        "Meeting Rooms"
+      ],
+      "prerequisites": [
+        "Sorting"
+      ],
+      "commonMistakes": [
+        "Forgetting to sort",
+        "Incorrect overlap condition",
+        "Missing last interval"
+      ],
+      "estimatedProblems": 15,
+      "problems": [
+        {
+          "leetcodeNumber": 56,
+          "title": "Merge Intervals",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/merge-intervals/"
+        },
+        {
+          "leetcodeNumber": 57,
+          "title": "Insert Interval",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/insert-interval/"
+        },
+        {
+          "leetcodeNumber": 252,
+          "title": "Meeting Rooms",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms/"
+        },
+        {
+          "leetcodeNumber": 253,
+          "title": "Meeting Rooms II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/meeting-rooms-ii/"
+        },
+        {
+          "leetcodeNumber": 435,
+          "title": "Non-overlapping Intervals",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/non-overlapping-intervals/"
+        },
+        {
+          "leetcodeNumber": 452,
+          "title": "Minimum Number of Arrows to Burst Balloons",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/"
+        },
+        {
+          "leetcodeNumber": 986,
+          "title": "Interval List Intersections",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/interval-list-intersections/"
+        }
+      ]
+    },{
+      "id": "matrix",
+      "name": "Matrix",
+      "description": "Matrix problems combine array traversal with two-dimensional indexing, simulation, searching, and graph-like thinking.",
+      "recognitionClues": [
+        "2D Array",
+        "Grid",
+        "Matrix",
+        "Rows and Columns",
+        "Traversal"
+      ],
+      "prerequisites": [
+        "Arrays",
+        "Traversal"
+      ],
+      "commonMistakes": [
+        "Row-column confusion",
+        "Boundary errors",
+        "Direction mistakes"
+      ],
+      "estimatedProblems": 20,
+      "problems": [
+        {
+          "leetcodeNumber": 48,
+          "title": "Rotate Image",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/rotate-image/"
+        },
+        {
+          "leetcodeNumber": 54,
+          "title": "Spiral Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix/"
+        },
+        {
+          "leetcodeNumber": 59,
+          "title": "Spiral Matrix II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix-ii/"
+        },
+        {
+          "leetcodeNumber": 73,
+          "title": "Set Matrix Zeroes",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/set-matrix-zeroes/"
+        },
+        {
+          "leetcodeNumber": 74,
+          "title": "Search a 2D Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/"
+        },
+        {
+          "leetcodeNumber": 240,
+          "title": "Search a 2D Matrix II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix-ii/"
+        },
+        {
+          "leetcodeNumber": 289,
+          "title": "Game of Life",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/game-of-life/"
+        },
+        {
+          "leetcodeNumber": 766,
+          "title": "Toeplitz Matrix",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/toeplitz-matrix/"
+        },
+        {
+          "leetcodeNumber": 867,
+          "title": "Transpose Matrix",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/transpose-matrix/"
+        },
+        {
+          "leetcodeNumber": 885,
+          "title": "Spiral Matrix III",
+          "difficulty": "Medium",
+          "serviceImportance": 2,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/spiral-matrix-iii/"
+        }
+      ]
+    },
+    {
+      "id": "greedy-arrays",
+      "name": "Greedy on Arrays",
+      "description": "Make the locally optimal choice at every step to achieve a globally optimal solution. Many scheduling and optimization problems use this approach.",
+      "recognitionClues": [
+        "Minimum operations",
+        "Maximum profit",
+        "Choose best option",
+        "Optimize",
+        "Intervals"
+      ],
+      "prerequisites": [
+        "Sorting",
+        "Arrays"
+      ],
+      "commonMistakes": [
+        "Using DP unnecessarily",
+        "Choosing wrong greedy criteria",
+        "Ignoring sorting requirement"
+      ],
+      "estimatedProblems": 12,
+      "problems": [
+        {
+          "leetcodeNumber": 55,
+          "title": "Jump Game",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/jump-game/"
+        },
+        {
+          "leetcodeNumber": 45,
+          "title": "Jump Game II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/jump-game-ii/"
+        },
+        {
+          "leetcodeNumber": 134,
+          "title": "Gas Station",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/gas-station/"
+        },
+        {
+          "leetcodeNumber": 330,
+          "title": "Patching Array",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/patching-array/"
+        },
+        {
+          "leetcodeNumber": 435,
+          "title": "Non-overlapping Intervals",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/non-overlapping-intervals/"
+        },
+        {
+          "leetcodeNumber": 452,
+          "title": "Minimum Number of Arrows to Burst Balloons",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/"
+        },
+        {
+          "leetcodeNumber": 455,
+          "title": "Assign Cookies",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/assign-cookies/"
+        },
+        {
+          "leetcodeNumber": 605,
+          "title": "Can Place Flowers",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/can-place-flowers/"
+        },
+        {
+          "leetcodeNumber": 646,
+          "title": "Maximum Length of Pair Chain",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-length-of-pair-chain/"
+        },
+        {
+          "leetcodeNumber": 1029,
+          "title": "Two City Scheduling",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/two-city-scheduling/"
+        }
+      ]
+    },
+    {
+      "id": "monotonic-queue",
+      "name": "Monotonic Queue",
+      "description": "Maintain a deque in increasing or decreasing order to answer sliding window maximum/minimum queries efficiently.",
+      "recognitionClues": [
+        "Sliding Window Maximum",
+        "Maximum in Window",
+        "Minimum in Window",
+        "Deque",
+        "Maintain Order"
+      ],
+      "prerequisites": [
+        "Sliding Window",
+        "Deque"
+      ],
+      "commonMistakes": [
+        "Removing wrong index",
+        "Not removing expired elements",
+        "Incorrect deque ordering"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 239,
+          "title": "Sliding Window Maximum",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sliding-window-maximum/"
+        },
+        {
+          "leetcodeNumber": 862,
+          "title": "Shortest Subarray with Sum at Least K",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/"
+        },
+        {
+          "leetcodeNumber": 1425,
+          "title": "Constrained Subsequence Sum",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/constrained-subsequence-sum/"
+        },
+        {
+          "leetcodeNumber": 1438,
+          "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/"
+        }
+      ]
+    },
+    {
+      "id": "coordinate-compression",
+      "name": "Coordinate Compression",
+      "description": "Compress large values into smaller ranks while preserving order. Useful for Fenwick Tree, Segment Tree and offline processing.",
+      "recognitionClues": [
+        "Large coordinates",
+        "Rank values",
+        "Compress indices",
+        "Offline queries"
+      ],
+      "prerequisites": [
+        "Sorting"
+      ],
+      "commonMistakes": [
+        "Losing original ordering",
+        "Duplicate handling"
+      ],
+      "estimatedProblems": 3,
+      "problems": [
+        {
+          "leetcodeNumber": 1331,
+          "title": "Rank Transform of an Array",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/rank-transform-of-an-array/"
+        },
+        {
+          "leetcodeNumber": 1649,
+          "title": "Create Sorted Array through Instructions",
+          "difficulty": "Hard",
+          "serviceImportance": 2,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/create-sorted-array-through-instructions/"
+        },
+        {
+          "leetcodeNumber": 315,
+          "title": "Count of Smaller Numbers After Self",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/count-of-smaller-numbers-after-self/"
+        }
+      ]
+    },
+    {
+      "id": "bucket-sort",
+      "name": "Bucket Sort",
+      "description": "Use buckets or frequency arrays to solve ordering and frequency problems in linear time.",
+      "recognitionClues": [
+        "Frequency",
+        "Top K",
+        "Buckets",
+        "Linear Sorting"
+      ],
+      "prerequisites": [
+        "Frequency Array"
+      ],
+      "commonMistakes": [
+        "Wrong bucket size",
+        "Ignoring duplicates"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 347,
+          "title": "Top K Frequent Elements",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-elements/"
+        },
+        {
+          "leetcodeNumber": 451,
+          "title": "Sort Characters By Frequency",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-characters-by-frequency/"
+        },
+        {
+          "leetcodeNumber": 692,
+          "title": "Top K Frequent Words",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-words/"
+        },
+        {
+          "leetcodeNumber": 1636,
+          "title": "Sort Array by Increasing Frequency",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/sort-array-by-increasing-frequency/"
+        }
+      ]
+    },
+    {
+      "id": "cyclic-sort",
+      "name": "Cyclic Sort",
+      "description": "Place every element at its correct index. This pattern is extremely useful for missing number and duplicate number problems.",
+      "recognitionClues": [
+        "Numbers from 1 to N",
+        "Missing Number",
+        "Duplicate Number",
+        "Swap until correct position"
+      ],
+      "prerequisites": [
+        "In-place Modification"
+      ],
+      "commonMistakes": [
+        "Infinite swapping",
+        "Wrong index calculation",
+        "Not checking duplicates"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 41,
+          "title": "First Missing Positive",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/first-missing-positive/"
+        },
+        {
+          "leetcodeNumber": 268,
+          "title": "Missing Number",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/missing-number/"
+        },
+        {
+          "leetcodeNumber": 287,
+          "title": "Find the Duplicate Number",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-duplicate-number/"
+        },
+        {
+          "leetcodeNumber": 442,
+          "title": "Find All Duplicates in an Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-all-duplicates-in-an-array/"
+        },
+        {
+          "leetcodeNumber": 448,
+          "title": "Find All Numbers Disappeared in an Array",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/"
+        },
+        {
+          "leetcodeNumber": 645,
+          "title": "Set Mismatch",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/set-mismatch/"
+        }
+      ]
+    }
+  ]
+}

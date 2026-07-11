@@ -1,0 +1,20 @@
+[
+  { "id": "arrays", "title": "Arrays", "icon": "LayoutList", "order": 1 },
+  { "id": "strings", "title": "Strings", "icon": "Type", "order": 2 },
+  { "id": "linkedlist", "title": "Linked List", "icon": "Link", "order": 3 },
+  { "id": "stack", "title": "Stack", "icon": "SquareStack", "order": 4 },
+  { "id": "queue", "title": "Queue", "icon": "Container", "order": 5 },
+  { "id": "hashmap", "title": "HashMap", "icon": "Hash", "order": 6 },
+  { "id": "binarysearch", "title": "Binary Search", "icon": "Search", "order": 7 },
+  { "id": "recursion", "title": "Recursion", "icon": "Repeat", "order": 8 },
+  { "id": "backtracking", "title": "Backtracking", "icon": "GitBranch", "order": 9 },
+  { "id": "trees", "title": "Trees", "icon": "GitFork", "order": 10 },
+  { "id": "bst", "title": "BST", "icon": "GitPullRequest", "order": 11 },
+  { "id": "heap", "title": "Heap", "icon": "Layers", "order": 12 },
+  { "id": "graphs", "title": "Graphs", "icon": "Share2", "order": 13 },
+  { "id": "greedy", "title": "Greedy", "icon": "Zap", "order": 14 },
+  { "id": "dp", "title": "Dynamic Programming", "icon": "Cpu", "order": 15 },
+  { "id": "trie", "title": "Trie", "icon": "TreePine", "order": 16 },
+  { "id": "bitmanipulation", "title": "Bit Manipulation", "icon": "Binary", "order": 17 },
+  { "id": "math", "title": "Math & Number Theory", "order": 14 }
+]

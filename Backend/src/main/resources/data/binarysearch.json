@@ -1,0 +1,383 @@
+{
+  "id": "binary-search",
+  "title": "Binary Search",
+  "description": "Master Binary Search from beginner to advanced. Learn every standard interview pattern including Lower Bound, Upper Bound, Binary Search on Answer, Rotated Arrays, Peak Element and Search Space Reduction.",
+  "patterns": [
+    {
+      "id": "classic-binary-search",
+      "name": "Classic Binary Search",
+      "description": "Search efficiently in sorted arrays using divide and conquer.",
+      "recognitionClues": [
+        "Sorted Array",
+        "Search",
+        "Exact Element",
+        "O(log n)"
+      ],
+      "prerequisites": [
+        "Arrays"
+      ],
+      "commonMistakes": [
+        "Overflow while computing mid",
+        "Infinite loop",
+        "Wrong boundary updates"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 35,
+          "title": "Search Insert Position",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-insert-position/"
+        },
+        {
+          "leetcodeNumber": 69,
+          "title": "Sqrt(x)",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sqrtx/"
+        },
+        {
+          "leetcodeNumber": 278,
+          "title": "First Bad Version",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/first-bad-version/"
+        },
+        {
+          "leetcodeNumber": 704,
+          "title": "Binary Search",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-search/"
+        }
+      ]
+    },
+    {
+      "id": "lower-bound",
+      "name": "Lower Bound",
+      "description": "Find the first position where an element can be inserted without violating sorted order.",
+      "recognitionClues": [
+        "First Occurrence",
+        "Lower Bound",
+        "Insertion Position"
+      ],
+      "prerequisites": [
+        "Classic Binary Search"
+      ],
+      "commonMistakes": [
+        "Using > instead of >=",
+        "Returning wrong index"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 34,
+          "title": "Find First and Last Position of Element in Sorted Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 35,
+          "title": "Search Insert Position",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-insert-position/"
+        },
+        {
+          "leetcodeNumber": 744,
+          "title": "Find Smallest Letter Greater Than Target",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/"
+        }
+      ]
+    },
+    {
+      "id": "upper-bound",
+      "name": "Upper Bound",
+      "description": "Locate the first element strictly greater than a target.",
+      "recognitionClues": [
+        "Upper Bound",
+        "Last Occurrence",
+        "Greater Element"
+      ],
+      "prerequisites": [
+        "Lower Bound"
+      ],
+      "commonMistakes": [
+        "Confusing lower and upper bound",
+        "Wrong comparison operator"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 34,
+          "title": "Find First and Last Position of Element in Sorted Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 275,
+          "title": "H-Index II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/h-index-ii/"
+        }
+      ]
+    },
+    {
+      "id": "binary-search-on-answer",
+      "name": "Binary Search on Answer",
+      "description": "Search over the answer space instead of the array. One of the most important interview patterns.",
+      "recognitionClues": [
+        "Minimum Possible",
+        "Maximum Possible",
+        "Optimize",
+        "Feasible",
+        "Capacity",
+        "Speed",
+        "Days",
+        "Answer Space"
+      ],
+      "prerequisites": [
+        "Classic Binary Search"
+      ],
+      "commonMistakes": [
+        "Wrong search boundaries",
+        "Incorrect feasibility function",
+        "Infinite loop"
+      ],
+      "estimatedProblems": 15,
+      "problems": [
+        {
+          "leetcodeNumber": 410,
+          "title": "Split Array Largest Sum",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/split-array-largest-sum/"
+        },
+        {
+          "leetcodeNumber": 875,
+          "title": "Koko Eating Bananas",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/koko-eating-bananas/"
+        },
+        {
+          "leetcodeNumber": 1011,
+          "title": "Capacity To Ship Packages Within D Days",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/"
+        },
+        {
+          "leetcodeNumber": 1283,
+          "title": "Find the Smallest Divisor Given a Threshold",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/"
+        },
+        {
+          "leetcodeNumber": 1482,
+          "title": "Minimum Number of Days to Make m Bouquets",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/"
+        },
+        {
+          "leetcodeNumber": 1552,
+          "title": "Magnetic Force Between Two Balls",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/magnetic-force-between-two-balls/"
+        },
+        {
+          "leetcodeNumber": 1760,
+          "title": "Minimum Limit of Balls in a Bag",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag/"
+        },
+        {
+          "leetcodeNumber": 1870,
+          "title": "Minimum Speed to Arrive on Time",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-speed-to-arrive-on-time/"
+        }
+      ]
+    },
+    {
+      "id": "rotated-array",
+      "name": "Rotated Array",
+      "description": "Binary Search on rotated sorted arrays, including duplicates and minimum element problems.",
+      "recognitionClues": [
+        "Rotated",
+        "Pivot",
+        "Sorted Half",
+        "Rotation"
+      ],
+      "prerequisites": [
+        "Classic Binary Search"
+      ],
+      "commonMistakes": [
+        "Choosing wrong sorted half",
+        "Ignoring duplicates",
+        "Wrong boundary update"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 33,
+          "title": "Search in Rotated Sorted Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 81,
+          "title": "Search in Rotated Sorted Array II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/"
+        },
+        {
+          "leetcodeNumber": 153,
+          "title": "Find Minimum in Rotated Sorted Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+        },
+        {
+          "leetcodeNumber": 154,
+          "title": "Find Minimum in Rotated Sorted Array II",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/"
+        }
+      ]
+    },
+    {
+      "id": "peak-element",
+      "name": "Peak Element",
+      "description": "Find local optimums using Binary Search without scanning the entire array.",
+      "recognitionClues": [
+        "Peak",
+        "Mountain",
+        "Bitonic",
+        "Local Maximum"
+      ],
+      "prerequisites": [
+        "Classic Binary Search"
+      ],
+      "commonMistakes": [
+        "Accessing out-of-bounds neighbors",
+        "Wrong comparison direction"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 162,
+          "title": "Find Peak Element",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-peak-element/"
+        },
+        {
+          "leetcodeNumber": 852,
+          "title": "Peak Index in a Mountain Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/peak-index-in-a-mountain-array/"
+        },
+        {
+          "leetcodeNumber": 1095,
+          "title": "Find in Mountain Array",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/find-in-mountain-array/"
+        }
+      ]
+    },
+    {
+      "id": "search-space-reduction",
+      "name": "Search Space Reduction",
+      "description": "Reduce the search interval by exploiting sorted properties or monotonic conditions.",
+      "recognitionClues": [
+        "Matrix Search",
+        "Sorted Matrix",
+        "Monotonic Property",
+        "Reduce Search Space"
+      ],
+      "prerequisites": [
+        "Classic Binary Search"
+      ],
+      "commonMistakes": [
+        "Choosing wrong elimination strategy",
+        "Ignoring monotonicity"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 74,
+          "title": "Search a 2D Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix/"
+        },
+        {
+          "leetcodeNumber": 240,
+          "title": "Search a 2D Matrix II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/search-a-2d-matrix-ii/"
+        },
+        {
+          "leetcodeNumber": 378,
+          "title": "Kth Smallest Element in a Sorted Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/"
+        },
+        {
+          "leetcodeNumber": 540,
+          "title": "Single Element in a Sorted Array",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/single-element-in-a-sorted-array/"
+        }
+      ]
+    }
+  ]
+}

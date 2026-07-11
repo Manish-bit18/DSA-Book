@@ -1,0 +1,304 @@
+{
+  "id": "math",
+  "title": "Math & Number Theory",
+  "description": "Master mathematical concepts frequently asked in coding interviews including primes, GCD, modular arithmetic, exponentiation and combinatorics.",
+
+  "patterns": [
+
+    {
+      "id": "prime-numbers",
+      "name": "Prime Numbers",
+      "description": "Learn prime checking and related interview problems.",
+      "recognitionClues": [
+        "Prime",
+        "Factors",
+        "Divisibility"
+      ],
+      "prerequisites": [
+        "Basic Mathematics"
+      ],
+      "commonMistakes": [
+        "Checking until n",
+        "Ignoring sqrt(n) optimization"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 204,
+          "title": "Count Primes",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/count-primes/"
+        },
+        {
+          "leetcodeNumber": 2520,
+          "title": "Count the Digits That Divide a Number",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 2,
+          "leetcodeUrl": "https://leetcode.com/problems/count-the-digits-that-divide-a-number/"
+        }
+      ]
+    },
+
+    {
+      "id": "gcd",
+      "name": "GCD",
+      "description": "Solve problems using Euclid's Algorithm.",
+      "recognitionClues": [
+        "Greatest Common Divisor",
+        "GCD",
+        "Coprime"
+      ],
+      "prerequisites": [
+        "Prime Numbers"
+      ],
+      "commonMistakes": [
+        "Not using Euclid's Algorithm"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 1979,
+          "title": "Find Greatest Common Divisor of Array",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/find-greatest-common-divisor-of-array/"
+        },
+        {
+          "leetcodeNumber": 1071,
+          "title": "Greatest Common Divisor of Strings",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/greatest-common-divisor-of-strings/"
+        }
+      ]
+    },
+
+    {
+      "id": "lcm",
+      "name": "LCM",
+      "description": "Use GCD to compute least common multiples.",
+      "recognitionClues": [
+        "LCM",
+        "Multiple",
+        "Common Multiple"
+      ],
+      "prerequisites": [
+        "GCD"
+      ],
+      "commonMistakes": [
+        "Overflow while multiplying"
+      ],
+      "estimatedProblems": 3,
+      "problems": [
+        {
+          "leetcodeNumber": 2197,
+          "title": "Replace Non-Coprime Numbers in Array",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/replace-non-coprime-numbers-in-array/"
+        }
+      ]
+    },
+
+    {
+      "id": "modular-arithmetic",
+      "name": "Modular Arithmetic",
+      "description": "Learn modulo operations and modular properties.",
+      "recognitionClues": [
+        "Modulo",
+        "Remainder",
+        "Mod"
+      ],
+      "prerequisites": [
+        "Basic Mathematics"
+      ],
+      "commonMistakes": [
+        "Negative modulo",
+        "Overflow"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 50,
+          "title": "Pow(x, n)",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/powx-n/"
+        },
+        {
+          "leetcodeNumber": 372,
+          "title": "Super Pow",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/super-pow/"
+        }
+      ]
+    },
+
+    {
+      "id": "fast-exponentiation",
+      "name": "Fast Exponentiation",
+      "description": "Binary exponentiation for efficient power calculation.",
+      "recognitionClues": [
+        "Power",
+        "Exponent",
+        "Binary Exponentiation"
+      ],
+      "prerequisites": [
+        "Recursion"
+      ],
+      "commonMistakes": [
+        "O(n) multiplication",
+        "Overflow"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 50,
+          "title": "Pow(x, n)",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/powx-n/"
+        }
+      ]
+    },
+
+    {
+      "id": "combinatorics",
+      "name": "Combinatorics",
+      "description": "Counting techniques including permutations and combinations.",
+      "recognitionClues": [
+        "nCr",
+        "Combinations",
+        "Permutations"
+      ],
+      "prerequisites": [
+        "Factorial"
+      ],
+      "commonMistakes": [
+        "Overflow",
+        "Duplicate counting"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 62,
+          "title": "Unique Paths",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/unique-paths/"
+        },
+        {
+          "leetcodeNumber": 60,
+          "title": "Permutation Sequence",
+          "difficulty": "Hard",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/permutation-sequence/"
+        }
+      ]
+    },
+
+    {
+      "id": "number-theory",
+      "name": "Number Theory",
+      "description": "General mathematical interview problems.",
+      "recognitionClues": [
+        "Digits",
+        "Palindrome",
+        "Reverse Number",
+        "Happy Number"
+      ],
+      "prerequisites": [
+        "Basic Mathematics"
+      ],
+      "commonMistakes": [
+        "Overflow",
+        "Ignoring edge cases"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 7,
+          "title": "Reverse Integer",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/reverse-integer/"
+        },
+        {
+          "leetcodeNumber": 9,
+          "title": "Palindrome Number",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/palindrome-number/"
+        },
+        {
+          "leetcodeNumber": 202,
+          "title": "Happy Number",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/happy-number/"
+        },
+        {
+          "leetcodeNumber": 258,
+          "title": "Add Digits",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/add-digits/"
+        },
+        {
+          "leetcodeNumber": 326,
+          "title": "Power of Three",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/power-of-three/"
+        }
+      ]
+    },
+
+    {
+      "id": "sieve",
+      "name": "Sieve of Eratosthenes",
+      "description": "Generate prime numbers efficiently.",
+      "recognitionClues": [
+        "Generate Primes",
+        "Prime Range",
+        "Sieve"
+      ],
+      "prerequisites": [
+        "Prime Numbers"
+      ],
+      "commonMistakes": [
+        "Starting from 2*i",
+        "Incorrect loop bounds"
+      ],
+      "estimatedProblems": 3,
+      "problems": [
+        {
+          "leetcodeNumber": 204,
+          "title": "Count Primes",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/count-primes/"
+        }
+      ]
+    }
+
+  ]
+}

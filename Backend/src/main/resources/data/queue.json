@@ -1,0 +1,324 @@
+{
+  "id": "queue",
+  "title": "Queue",
+  "description": "Master Queue from beginner to advanced. Learn every interview pattern including Deque, Circular Queue, Monotonic Queue, BFS Queue and Priority Queue Simulation.",
+  "patterns": [
+    {
+      "id": "basic-queue",
+      "name": "Basic Queue",
+      "description": "Learn FIFO operations, queue implementation and basic queue applications.",
+      "recognitionClues": [
+        "FIFO",
+        "Queue",
+        "Enqueue",
+        "Dequeue",
+        "Waiting Order"
+      ],
+      "prerequisites": [
+        "Arrays",
+        "Linked List"
+      ],
+      "commonMistakes": [
+        "Queue Underflow",
+        "Wrong front/rear update",
+        "Incorrect empty queue handling"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 232,
+          "title": "Implement Queue using Stacks",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/implement-queue-using-stacks/"
+        },
+        {
+          "leetcodeNumber": 933,
+          "title": "Number of Recent Calls",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/number-of-recent-calls/"
+        },
+        {
+          "leetcodeNumber": 1670,
+          "title": "Design Front Middle Back Queue",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/design-front-middle-back-queue/"
+        }
+      ]
+    },
+    {
+      "id": "deque",
+      "name": "Deque",
+      "description": "Double-ended queue problems involving insertion and deletion from both ends.",
+      "recognitionClues": [
+        "Deque",
+        "Sliding Window",
+        "Front & Back",
+        "Double Ended Queue"
+      ],
+      "prerequisites": [
+        "Basic Queue"
+      ],
+      "commonMistakes": [
+        "Wrong front/rear operations",
+        "Incorrect deque maintenance"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 641,
+          "title": "Design Circular Deque",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/design-circular-deque/"
+        },
+        {
+          "leetcodeNumber": 1438,
+          "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/"
+        }
+      ]
+    },
+    {
+      "id": "circular-queue",
+      "name": "Circular Queue",
+      "description": "Queue implementation using circular arrays and fixed-size buffers.",
+      "recognitionClues": [
+        "Circular Queue",
+        "Ring Buffer",
+        "Wrap Around"
+      ],
+      "prerequisites": [
+        "Basic Queue"
+      ],
+      "commonMistakes": [
+        "Incorrect modulo operation",
+        "Wrong full/empty condition"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 622,
+          "title": "Design Circular Queue",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/design-circular-queue/"
+        },
+        {
+          "leetcodeNumber": 641,
+          "title": "Design Circular Deque",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/design-circular-deque/"
+        }
+      ]
+    },
+    {
+      "id": "monotonic-queue",
+      "name": "Monotonic Queue",
+      "description": "Maintain a queue in monotonic order to efficiently solve sliding window maximum/minimum and range query problems.",
+      "recognitionClues": [
+        "Sliding Window Maximum",
+        "Maximum in Window",
+        "Minimum in Window",
+        "Window Queries"
+      ],
+      "prerequisites": [
+        "Deque",
+        "Sliding Window"
+      ],
+      "commonMistakes": [
+        "Removing elements in wrong order",
+        "Not removing expired indices",
+        "Maintaining values instead of indices"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 239,
+          "title": "Sliding Window Maximum",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sliding-window-maximum/"
+        },
+        {
+          "leetcodeNumber": 862,
+          "title": "Shortest Subarray with Sum at Least K",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/"
+        },
+        {
+          "leetcodeNumber": 1438,
+          "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/"
+        },
+        {
+          "leetcodeNumber": 1696,
+          "title": "Jump Game VI",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/jump-game-vi/"
+        }
+      ]
+    },
+    {
+      "id": "bfs-queue",
+      "name": "BFS Queue",
+      "description": "Use queues to perform Breadth-First Search on trees, graphs and grids.",
+      "recognitionClues": [
+        "Level Order",
+        "Shortest Path",
+        "Grid BFS",
+        "Minimum Steps",
+        "Traversal"
+      ],
+      "prerequisites": [
+        "Basic Queue"
+      ],
+      "commonMistakes": [
+        "Forgetting visited array",
+        "Incorrect level traversal",
+        "Adding duplicate nodes"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 102,
+          "title": "Binary Tree Level Order Traversal",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+        },
+        {
+          "leetcodeNumber": 103,
+          "title": "Binary Tree Zigzag Level Order Traversal",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/"
+        },
+        {
+          "leetcodeNumber": 199,
+          "title": "Binary Tree Right Side View",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-right-side-view/"
+        },
+        {
+          "leetcodeNumber": 994,
+          "title": "Rotting Oranges",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/rotting-oranges/"
+        },
+        {
+          "leetcodeNumber": 1091,
+          "title": "Shortest Path in Binary Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+        },
+        {
+          "leetcodeNumber": 542,
+          "title": "01 Matrix",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/01-matrix/"
+        },
+        {
+          "leetcodeNumber": 752,
+          "title": "Open the Lock",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/open-the-lock/"
+        },
+        {
+          "leetcodeNumber": 127,
+          "title": "Word Ladder",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/word-ladder/"
+        }
+      ]
+    },
+    {
+      "id": "priority-queue-simulation",
+      "name": "Priority Queue Simulation",
+      "description": "Problems where a priority queue is used to repeatedly process the highest or lowest priority element.",
+      "recognitionClues": [
+        "Highest Priority",
+        "Smallest Element",
+        "Scheduling",
+        "Repeated Extraction"
+      ],
+      "prerequisites": [
+        "Heap"
+      ],
+      "commonMistakes": [
+        "Using normal queue",
+        "Wrong comparator",
+        "Not reinserting updated values"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 703,
+          "title": "Kth Largest Element in a Stream",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+        },
+        {
+          "leetcodeNumber": 1046,
+          "title": "Last Stone Weight",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/last-stone-weight/"
+        },
+        {
+          "leetcodeNumber": 621,
+          "title": "Task Scheduler",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/task-scheduler/"
+        },
+        {
+          "leetcodeNumber": 857,
+          "title": "Minimum Cost to Hire K Workers",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/"
+        }
+      ]
+    }
+  ]
+}

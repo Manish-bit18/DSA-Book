@@ -1,0 +1,632 @@
+{
+  "id": "linked-list",
+  "title": "Linked List",
+  "description": "Master Linked List from beginner to advanced. Learn every interview pattern including Fast & Slow Pointer, Dummy Node, Merge Lists, LRU Cache Pattern, Copy Random Pointer and more.",
+    "patterns": [
+      {
+        "id": "basic-operations",
+        "name": "Basic Operations",
+        "description": "Learn fundamental linked list operations including traversal, insertion, deletion, searching, and node manipulation.",
+        "recognitionClues": [
+          "Insert Node",
+          "Delete Node",
+          "Traverse List",
+          "Find Node",
+          "Basic Linked List"
+        ],
+        "prerequisites": [
+          "Pointers",
+          "Arrays"
+        ],
+        "commonMistakes": [
+          "Losing head pointer",
+          "Null pointer exceptions",
+          "Incorrect next pointer updates"
+        ],
+        "estimatedProblems": 12,
+        "problems": [
+          {
+            "leetcodeNumber": 203,
+            "title": "Remove Linked List Elements",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/remove-linked-list-elements/"
+          },
+          {
+            "leetcodeNumber": 206,
+            "title": "Reverse Linked List",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/"
+          },
+          {
+            "leetcodeNumber": 237,
+            "title": "Delete Node in a Linked List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/delete-node-in-a-linked-list/"
+          },
+          {
+            "leetcodeNumber": 707,
+            "title": "Design Linked List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/design-linked-list/"
+          },
+          {
+            "leetcodeNumber": 1290,
+            "title": "Convert Binary Number in a Linked List to Integer",
+            "difficulty": "Easy",
+            "serviceImportance": 3,
+            "productImportance": 2,
+            "leetcodeUrl": "https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/"
+          },
+          {
+            "leetcodeNumber": 1669,
+            "title": "Merge In Between Linked Lists",
+            "difficulty": "Medium",
+            "serviceImportance": 3,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/merge-in-between-linked-lists/"
+          }
+        ]
+      },
+      {
+        "id": "reverse-linked-list",
+        "name": "Reverse Linked List",
+        "description": "Master reversing linked lists iteratively, recursively, partially, and in groups.",
+        "recognitionClues": [
+          "Reverse",
+          "Reverse Between",
+          "Reverse K Nodes",
+          "Reverse Entire List"
+        ],
+        "prerequisites": [
+          "Basic Operations"
+        ],
+        "commonMistakes": [
+          "Losing next node",
+          "Breaking links",
+          "Wrong head update"
+        ],
+        "estimatedProblems": 12,
+        "problems": [
+          {
+            "leetcodeNumber": 92,
+            "title": "Reverse Linked List II",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list-ii/"
+          },
+          {
+            "leetcodeNumber": 206,
+            "title": "Reverse Linked List",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/"
+          },
+          {
+            "leetcodeNumber": 25,
+            "title": "Reverse Nodes in k-Group",
+            "difficulty": "Hard",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+          },
+          {
+            "leetcodeNumber": 24,
+            "title": "Swap Nodes in Pairs",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/swap-nodes-in-pairs/"
+          }
+        ]
+      },
+      {
+        "id": "fast-slow-pointer",
+        "name": "Fast & Slow Pointer",
+        "description": "Use two pointers moving at different speeds to detect cycles, locate middle nodes, and solve linked list problems efficiently.",
+        "recognitionClues": [
+          "Middle Node",
+          "Cycle",
+          "Palindrome",
+          "Meeting Point"
+        ],
+        "prerequisites": [
+          "Basic Operations"
+        ],
+        "commonMistakes": [
+          "Wrong loop condition",
+          "Null pointer access",
+          "Incorrect pointer movement"
+        ],
+        "estimatedProblems": 10,
+        "problems": [
+          {
+            "leetcodeNumber": 141,
+            "title": "Linked List Cycle",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/"
+          },
+          {
+            "leetcodeNumber": 142,
+            "title": "Linked List Cycle II",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle-ii/"
+          },
+          {
+            "leetcodeNumber": 876,
+            "title": "Middle of the Linked List",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/middle-of-the-linked-list/"
+          },
+          {
+            "leetcodeNumber": 234,
+            "title": "Palindrome Linked List",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/palindrome-linked-list/"
+          },
+          {
+            "leetcodeNumber": 143,
+            "title": "Reorder List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/reorder-list/"
+          }
+        ]
+      },
+      {
+        "id": "merge-lists",
+        "name": "Merge Lists",
+        "description": "Problems involving merging two or more sorted linked lists using iterative, recursive, or heap-based approaches.",
+        "recognitionClues": [
+          "Merge Two Lists",
+          "Merge K Lists",
+          "Sorted Lists",
+          "Combine Lists"
+        ],
+        "prerequisites": [
+          "Basic Operations"
+        ],
+        "commonMistakes": [
+          "Losing remaining nodes",
+          "Incorrect dummy pointer usage"
+        ],
+        "estimatedProblems": 8,
+        "problems": [
+          {
+            "leetcodeNumber": 21,
+            "title": "Merge Two Sorted Lists",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/"
+          },
+          {
+            "leetcodeNumber": 23,
+            "title": "Merge k Sorted Lists",
+            "difficulty": "Hard",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/merge-k-sorted-lists/"
+          },
+          {
+            "leetcodeNumber": 148,
+            "title": "Sort List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/sort-list/"
+          },
+          {
+            "leetcodeNumber": 1669,
+            "title": "Merge In Between Linked Lists",
+            "difficulty": "Medium",
+            "serviceImportance": 3,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/merge-in-between-linked-lists/"
+          }
+        ]
+      },
+      {
+        "id": "dummy-node",
+        "name": "Dummy Node",
+        "description": "Dummy nodes simplify insertion, deletion, partitioning and merging by avoiding special handling for the head node.",
+        "recognitionClues": [
+          "Head Modification",
+          "Delete First Node",
+          "Merge Lists",
+          "Partition",
+          "Linked List Construction"
+        ],
+        "prerequisites": [
+          "Basic Operations"
+        ],
+        "commonMistakes": [
+          "Returning dummy instead of dummy.next",
+          "Forgetting to advance pointers",
+          "Breaking next references"
+        ],
+        "estimatedProblems": 8,
+        "problems": [
+          {
+            "leetcodeNumber": 19,
+            "title": "Remove Nth Node From End of List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+          },
+          {
+            "leetcodeNumber": 21,
+            "title": "Merge Two Sorted Lists",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/"
+          },
+          {
+            "leetcodeNumber": 82,
+            "title": "Remove Duplicates from Sorted List II",
+            "difficulty": "Medium",
+            "serviceImportance": 4,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/"
+          },
+          {
+            "leetcodeNumber": 86,
+            "title": "Partition List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/partition-list/"
+          },
+          {
+            "leetcodeNumber": 203,
+            "title": "Remove Linked List Elements",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/remove-linked-list-elements/"
+          }
+        ]
+      },
+      {
+        "id": "two-pointer",
+        "name": "Two Pointer",
+        "description": "Use two pointers moving together or at different speeds to solve linked list problems efficiently.",
+        "recognitionClues": [
+          "Nth Node",
+          "Intersection",
+          "Distance Between Nodes",
+          "One Pass"
+        ],
+        "prerequisites": [
+          "Basic Operations"
+        ],
+        "commonMistakes": [
+          "Incorrect pointer offset",
+          "Null pointer access",
+          "Wrong termination condition"
+        ],
+        "estimatedProblems": 8,
+        "problems": [
+          {
+            "leetcodeNumber": 19,
+            "title": "Remove Nth Node From End of List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+          },
+          {
+            "leetcodeNumber": 160,
+            "title": "Intersection of Two Linked Lists",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/intersection-of-two-linked-lists/"
+          },
+          {
+            "leetcodeNumber": 876,
+            "title": "Middle of the Linked List",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/middle-of-the-linked-list/"
+          },
+          {
+            "leetcodeNumber": 328,
+            "title": "Odd Even Linked List",
+            "difficulty": "Medium",
+            "serviceImportance": 4,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/odd-even-linked-list/"
+          }
+        ]
+      },
+      {
+        "id": "cycle-detection",
+        "name": "Cycle Detection",
+        "description": "Detect loops in linked lists using Floyd's Cycle Detection Algorithm.",
+        "recognitionClues": [
+          "Cycle",
+          "Loop",
+          "Meeting Point",
+          "Circular List"
+        ],
+        "prerequisites": [
+          "Fast & Slow Pointer"
+        ],
+        "commonMistakes": [
+          "Using extra space unnecessarily",
+          "Wrong loop condition"
+        ],
+        "estimatedProblems": 4,
+        "problems": [
+          {
+            "leetcodeNumber": 141,
+            "title": "Linked List Cycle",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/"
+          },
+          {
+            "leetcodeNumber": 142,
+            "title": "Linked List Cycle II",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle-ii/"
+          }
+        ]
+      },
+      {
+        "id": "recursion",
+        "name": "Recursion",
+        "description": "Recursive linked list problems involving traversal, reversal and merging.",
+        "recognitionClues": [
+          "Recursive Reverse",
+          "Recursive Merge",
+          "Backtracking on List"
+        ],
+        "prerequisites": [
+          "Recursion"
+        ],
+        "commonMistakes": [
+          "Stack overflow",
+          "Missing base case",
+          "Incorrect return values"
+        ],
+        "estimatedProblems": 6,
+        "problems": [
+          {
+            "leetcodeNumber": 21,
+            "title": "Merge Two Sorted Lists",
+            "difficulty": "Easy",
+            "serviceImportance": 4,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/"
+          },
+          {
+            "leetcodeNumber": 206,
+            "title": "Reverse Linked List",
+            "difficulty": "Easy",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/"
+          },
+          {
+            "leetcodeNumber": 25,
+            "title": "Reverse Nodes in k-Group",
+            "difficulty": "Hard",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+          }
+        ]
+      },
+      {
+        "id": "sorting",
+        "name": "Sorting",
+        "description": "Sort linked lists efficiently using Merge Sort and related techniques.",
+        "recognitionClues": [
+          "Sort Linked List",
+          "Merge Sort",
+          "Order Nodes"
+        ],
+        "prerequisites": [
+          "Merge Lists",
+          "Fast & Slow Pointer"
+        ],
+        "commonMistakes": [
+          "Using array sort",
+          "Breaking links while splitting"
+        ],
+        "estimatedProblems": 6,
+        "problems": [
+          {
+            "leetcodeNumber": 148,
+            "title": "Sort List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/sort-list/"
+          },
+          {
+            "leetcodeNumber": 147,
+            "title": "Insertion Sort List",
+            "difficulty": "Medium",
+            "serviceImportance": 4,
+            "productImportance": 4,
+            "leetcodeUrl": "https://leetcode.com/problems/insertion-sort-list/"
+          }
+        ]
+      },
+      {
+        "id": "partition",
+        "name": "Partition",
+        "description": "Partition linked lists into multiple sections while preserving relative order.",
+        "recognitionClues": [
+          "Partition List",
+          "Separate Nodes",
+          "Less Than X",
+          "Rearrange List"
+        ],
+        "prerequisites": [
+          "Dummy Node",
+          "Two Pointer"
+        ],
+        "commonMistakes": [
+          "Breaking original links",
+          "Not terminating the second list",
+          "Losing head references"
+        ],
+        "estimatedProblems": 5,
+        "problems": [
+          {
+            "leetcodeNumber": 86,
+            "title": "Partition List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/partition-list/"
+          },
+          {
+            "leetcodeNumber": 328,
+            "title": "Odd Even Linked List",
+            "difficulty": "Medium",
+            "serviceImportance": 4,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/odd-even-linked-list/"
+          },
+          {
+            "leetcodeNumber": 143,
+            "title": "Reorder List",
+            "difficulty": "Medium",
+            "serviceImportance": 4,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/reorder-list/"
+          }
+        ]
+      },
+      {
+        "id": "copy-random-pointer",
+        "name": "Copy Random Pointer",
+        "description": "Deep copy linked lists containing both next and random pointers.",
+        "recognitionClues": [
+          "Random Pointer",
+          "Clone List",
+          "Deep Copy",
+          "HashMap"
+        ],
+        "prerequisites": [
+          "HashMap",
+          "Linked List"
+        ],
+        "commonMistakes": [
+          "Shallow copy",
+          "Incorrect random mapping",
+          "Broken next pointers"
+        ],
+        "estimatedProblems": 3,
+        "problems": [
+          {
+            "leetcodeNumber": 138,
+            "title": "Copy List with Random Pointer",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/copy-list-with-random-pointer/"
+          }
+        ]
+      },
+      {
+        "id": "lru-pattern",
+        "name": "LRU Cache Pattern",
+        "description": "Problems combining Doubly Linked List and HashMap to implement cache data structures.",
+        "recognitionClues": [
+          "LRU Cache",
+          "Recent Access",
+          "Eviction Policy",
+          "Design Question"
+        ],
+        "prerequisites": [
+          "HashMap",
+          "Doubly Linked List"
+        ],
+        "commonMistakes": [
+          "Forgetting O(1) operations",
+          "Incorrect node removal",
+          "Not updating head/tail"
+        ],
+        "estimatedProblems": 5,
+        "problems": [
+          {
+            "leetcodeNumber": 146,
+            "title": "LRU Cache",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/lru-cache/"
+          },
+          {
+            "leetcodeNumber": 460,
+            "title": "LFU Cache",
+            "difficulty": "Hard",
+            "serviceImportance": 4,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/lfu-cache/"
+          }
+        ]
+      },
+      {
+        "id": "multi-level-linked-list",
+        "name": "Multi-Level Linked List",
+        "description": "Flatten and process linked lists that contain child pointers or multiple levels.",
+        "recognitionClues": [
+          "Flatten",
+          "Child Pointer",
+          "Nested Linked List",
+          "Depth First"
+        ],
+        "prerequisites": [
+          "Recursion",
+          "Stack"
+        ],
+        "commonMistakes": [
+          "Losing child pointers",
+          "Incorrect next pointer restoration"
+        ],
+        "estimatedProblems": 4,
+        "problems": [
+          {
+            "leetcodeNumber": 430,
+            "title": "Flatten a Multilevel Doubly Linked List",
+            "difficulty": "Medium",
+            "serviceImportance": 5,
+            "productImportance": 5,
+            "leetcodeUrl": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/"
+          }
+        ]
+      }
+
+    ]
+}

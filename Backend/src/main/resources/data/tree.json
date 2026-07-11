@@ -1,0 +1,459 @@
+{
+  "id": "trees",
+  "title": "Trees",
+  "description": "Master Trees from beginner to advanced. Learn DFS, BFS, Traversals, Diameter, LCA, Tree DP, Serialization and all major interview patterns.",
+  "patterns": [
+    {
+      "id": "dfs",
+      "name": "DFS",
+      "description": "Depth First Search recursively explores tree branches before backtracking.",
+      "recognitionClues": [
+        "Depth First Search",
+        "Recursive Traversal",
+        "Tree DFS",
+        "Visit Children"
+      ],
+      "prerequisites": [
+        "Recursion"
+      ],
+      "commonMistakes": [
+        "Missing base case",
+        "Incorrect recursion order",
+        "Null pointer handling"
+      ],
+      "estimatedProblems": 12,
+      "problems": [
+        {
+          "leetcodeNumber": 104,
+          "title": "Maximum Depth of Binary Tree",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+        },
+        {
+          "leetcodeNumber": 111,
+          "title": "Minimum Depth of Binary Tree",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-depth-of-binary-tree/"
+        },
+        {
+          "leetcodeNumber": 112,
+          "title": "Path Sum",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/path-sum/"
+        },
+        {
+          "leetcodeNumber": 113,
+          "title": "Path Sum II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/path-sum-ii/"
+        },
+        {
+          "leetcodeNumber": 129,
+          "title": "Sum Root to Leaf Numbers",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sum-root-to-leaf-numbers/"
+        },
+        {
+          "leetcodeNumber": 257,
+          "title": "Binary Tree Paths",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-paths/"
+        }
+      ]
+    },
+    {
+      "id": "bfs",
+      "name": "BFS",
+      "description": "Traverse trees level by level using queues.",
+      "recognitionClues": [
+        "Level Order",
+        "Queue",
+        "Breadth First Search",
+        "Layer Wise"
+      ],
+      "prerequisites": [
+        "Queue"
+      ],
+      "commonMistakes": [
+        "Incorrect level size",
+        "Not checking null nodes"
+      ],
+      "estimatedProblems": 10,
+      "problems": [
+        {
+          "leetcodeNumber": 102,
+          "title": "Binary Tree Level Order Traversal",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+        },
+        {
+          "leetcodeNumber": 103,
+          "title": "Binary Tree Zigzag Level Order Traversal",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/"
+        },
+        {
+          "leetcodeNumber": 107,
+          "title": "Binary Tree Level Order Traversal II",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal-ii/"
+        },
+        {
+          "leetcodeNumber": 199,
+          "title": "Binary Tree Right Side View",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-right-side-view/"
+        },
+        {
+          "leetcodeNumber": 515,
+          "title": "Find Largest Value in Each Tree Row",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/find-largest-value-in-each-tree-row/"
+        }
+      ]
+    },
+    {
+      "id": "preorder",
+      "name": "Preorder",
+      "description": "Visit Root → Left → Right.",
+      "recognitionClues": [
+        "Preorder",
+        "Root First"
+      ],
+      "prerequisites": [
+        "DFS"
+      ],
+      "commonMistakes": [
+        "Wrong traversal order"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 144,
+          "title": "Binary Tree Preorder Traversal",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+        },
+        {
+          "leetcodeNumber": 589,
+          "title": "N-ary Tree Preorder Traversal",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/n-ary-tree-preorder-traversal/"
+        }
+      ]
+    },
+    {
+      "id": "inorder",
+      "name": "Inorder",
+      "description": "Visit Left → Root → Right.",
+      "recognitionClues": [
+        "Inorder",
+        "Sorted BST"
+      ],
+      "prerequisites": [
+        "DFS"
+      ],
+      "commonMistakes": [
+        "Wrong traversal order"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 94,
+          "title": "Binary Tree Inorder Traversal",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+        },
+        {
+          "leetcodeNumber": 590,
+          "title": "N-ary Tree Postorder Traversal",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/n-ary-tree-postorder-traversal/"
+        }
+      ]
+    },
+    {
+      "id": "postorder",
+      "name": "Postorder",
+      "description": "Visit Left → Right → Root.",
+      "recognitionClues": [
+        "Postorder",
+        "Delete Tree",
+        "Bottom Up"
+      ],
+      "prerequisites": [
+        "DFS"
+      ],
+      "commonMistakes": [
+        "Returning too early",
+        "Wrong recursion order"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 145,
+          "title": "Binary Tree Postorder Traversal",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+        },
+        {
+          "leetcodeNumber": 590,
+          "title": "N-ary Tree Postorder Traversal",
+          "difficulty": "Easy",
+          "serviceImportance": 3,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/n-ary-tree-postorder-traversal/"
+        }
+      ]
+    },
+    {
+      "id": "tree-construction",
+      "name": "Tree Construction",
+      "description": "Construct binary trees from different traversal orders and build trees recursively.",
+      "recognitionClues": [
+        "Build Tree",
+        "Construct Binary Tree",
+        "Preorder + Inorder",
+        "Postorder + Inorder"
+      ],
+      "prerequisites": [
+        "DFS",
+        "Tree Traversals"
+      ],
+      "commonMistakes": [
+        "Incorrect subtree boundaries",
+        "Wrong preorder/postorder index",
+        "Missing base condition"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 105,
+          "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"
+        },
+        {
+          "leetcodeNumber": 106,
+          "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/"
+        },
+        {
+          "leetcodeNumber": 889,
+          "title": "Construct Binary Tree from Preorder and Postorder Traversal",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/"
+        },
+        {
+          "leetcodeNumber": 108,
+          "title": "Convert Sorted Array to Binary Search Tree",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/"
+        }
+      ]
+    },
+    {
+      "id": "serialization",
+      "name": "Serialization",
+      "description": "Convert trees into strings and reconstruct them while preserving structure.",
+      "recognitionClues": [
+        "Serialize",
+        "Deserialize",
+        "Encode Tree",
+        "Decode Tree"
+      ],
+      "prerequisites": [
+        "DFS",
+        "BFS"
+      ],
+      "commonMistakes": [
+        "Ignoring null nodes",
+        "Wrong reconstruction order",
+        "Losing tree structure"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 297,
+          "title": "Serialize and Deserialize Binary Tree",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+        },
+        {
+          "leetcodeNumber": 449,
+          "title": "Serialize and Deserialize BST",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/serialize-and-deserialize-bst/"
+        }
+      ]
+    },
+    {
+      "id": "tree-dp",
+      "name": "Tree DP",
+      "description": "Dynamic Programming on Trees using postorder traversal and state propagation.",
+      "recognitionClues": [
+        "Maximum Path",
+        "Rob Tree",
+        "Tree States",
+        "Subtree DP"
+      ],
+      "prerequisites": [
+        "DFS",
+        "Dynamic Programming"
+      ],
+      "commonMistakes": [
+        "Wrong DP state",
+        "Ignoring subtree contribution",
+        "Returning incorrect value"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 124,
+          "title": "Binary Tree Maximum Path Sum",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-maximum-path-sum/"
+        },
+        {
+          "leetcodeNumber": 337,
+          "title": "House Robber III",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/house-robber-iii/"
+        },
+        {
+          "leetcodeNumber": 1372,
+          "title": "Longest ZigZag Path in a Binary Tree",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/"
+        },
+        {
+          "leetcodeNumber": 687,
+          "title": "Longest Univalue Path",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-univalue-path/"
+        }
+      ]
+    },
+    {
+      "id": "boundary-traversal",
+      "name": "Boundary Traversal",
+      "description": "Traverse the left boundary, leaves, and right boundary of a tree.",
+      "recognitionClues": [
+        "Boundary",
+        "Exterior",
+        "Left Boundary",
+        "Right Boundary"
+      ],
+      "prerequisites": [
+        "DFS"
+      ],
+      "commonMistakes": [
+        "Duplicating leaf nodes",
+        "Wrong traversal order"
+      ],
+      "estimatedProblems": 3,
+      "problems": [
+        {
+          "leetcodeNumber": 545,
+          "title": "Boundary of Binary Tree",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/boundary-of-binary-tree/"
+        }
+      ]
+    },
+    {
+      "id": "vertical-traversal",
+      "name": "Vertical Traversal",
+      "description": "Traverse binary trees column-wise using BFS/DFS and coordinate mapping.",
+      "recognitionClues": [
+        "Vertical Order",
+        "Columns",
+        "Coordinates",
+        "Horizontal Distance"
+      ],
+      "prerequisites": [
+        "BFS",
+        "HashMap"
+      ],
+      "commonMistakes": [
+        "Incorrect coordinate updates",
+        "Wrong sorting order",
+        "Ignoring row priority"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 314,
+          "title": "Binary Tree Vertical Order Traversal",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/binary-tree-vertical-order-traversal/"
+        },
+        {
+          "leetcodeNumber": 987,
+          "title": "Vertical Order Traversal of a Binary Tree",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/"
+        }
+      ]
+    }
+  ]
+}

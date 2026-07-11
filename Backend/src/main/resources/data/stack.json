@@ -1,0 +1,596 @@
+{
+  "id": "stack",
+  "title": "Stack",
+  "description": "Master Stack from beginner to advanced. Learn every interview pattern including Monotonic Stack, Next Greater Element, Histogram, Expression Evaluation and more.",
+
+  "patterns": [
+
+    {
+      "id": "basic-stack",
+      "name": "Basic Stack",
+      "description": "Learn the fundamental operations of a stack including push, pop, peek, traversal and stack implementation.",
+      "recognitionClues": [
+        "LIFO",
+        "Push",
+        "Pop",
+        "Peek",
+        "Undo Operation"
+      ],
+      "prerequisites": [
+        "Arrays",
+        "Linked List"
+      ],
+      "commonMistakes": [
+        "Stack underflow",
+        "Forgetting empty stack checks",
+        "Incorrect push/pop order"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 20,
+          "title": "Valid Parentheses",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/"
+        },
+        {
+          "leetcodeNumber": 344,
+          "title": "Reverse String",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/reverse-string/"
+        },
+        {
+          "leetcodeNumber": 225,
+          "title": "Implement Stack using Queues",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/implement-stack-using-queues/"
+        },
+        {
+          "leetcodeNumber": 232,
+          "title": "Implement Queue using Stacks",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/implement-queue-using-stacks/"
+        },
+        {
+          "leetcodeNumber": 155,
+          "title": "Min Stack",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/min-stack/"
+        },
+        {
+          "leetcodeNumber": 946,
+          "title": "Validate Stack Sequences",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/validate-stack-sequences/"
+        }
+      ]
+    },
+
+    {
+      "id": "monotonic-increasing-stack",
+      "name": "Monotonic Increasing Stack",
+      "description": "Maintain elements in increasing order to efficiently solve nearest smaller and histogram-related problems.",
+      "recognitionClues": [
+        "Nearest Smaller",
+        "Histogram",
+        "Increasing Order",
+        "Monotonic Stack"
+      ],
+      "prerequisites": [
+        "Basic Stack"
+      ],
+      "commonMistakes": [
+        "Wrong popping condition",
+        "Missing remaining elements"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 84,
+          "title": "Largest Rectangle in Histogram",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+        },
+        {
+          "leetcodeNumber": 85,
+          "title": "Maximal Rectangle",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximal-rectangle/"
+        },
+        {
+          "leetcodeNumber": 907,
+          "title": "Sum of Subarray Minimums",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sum-of-subarray-minimums/"
+        },
+        {
+          "leetcodeNumber": 1856,
+          "title": "Maximum Subarray Min-Product",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray-min-product/"
+        }
+      ]
+    },
+    {
+      "id": "monotonic-decreasing-stack",
+      "name": "Monotonic Decreasing Stack",
+      "description": "Maintain elements in decreasing order to solve next greater and related problems efficiently.",
+      "recognitionClues": [
+        "Next Greater",
+        "Greater Element",
+        "Monotonic Stack"
+      ],
+      "prerequisites": [
+        "Basic Stack"
+      ],
+      "commonMistakes": [
+        "Wrong comparison operator",
+        "Not emptying stack"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 496,
+          "title": "Next Greater Element I",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/next-greater-element-i/"
+        },
+        {
+          "leetcodeNumber": 503,
+          "title": "Next Greater Element II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/next-greater-element-ii/"
+        },
+        {
+          "leetcodeNumber": 739,
+          "title": "Daily Temperatures",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/daily-temperatures/"
+        },
+        {
+          "leetcodeNumber": 901,
+          "title": "Online Stock Span",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/online-stock-span/"
+        }
+      ]
+    },
+
+    {
+      "id": "next-greater-element",
+      "name": "Next Greater Element",
+      "description": "Find the next greater element using a monotonic decreasing stack. One of the most frequently asked stack patterns.",
+      "recognitionClues": [
+        "Next Greater",
+        "First Greater Element",
+        "Circular Array",
+        "Nearest Greater"
+      ],
+      "prerequisites": [
+        "Monotonic Decreasing Stack"
+      ],
+      "commonMistakes": [
+        "Wrong stack direction",
+        "Forgetting circular traversal",
+        "Incorrect popping condition"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 496,
+          "title": "Next Greater Element I",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/next-greater-element-i/"
+        },
+        {
+          "leetcodeNumber": 503,
+          "title": "Next Greater Element II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/next-greater-element-ii/"
+        },
+        {
+          "leetcodeNumber": 739,
+          "title": "Daily Temperatures",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/daily-temperatures/"
+        },
+        {
+          "leetcodeNumber": 556,
+          "title": "Next Greater Element III",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/next-greater-element-iii/"
+        }
+      ]
+    },
+    {
+      "id": "previous-greater",
+      "name": "Previous Greater",
+      "description": "Find the nearest greater element on the left using a monotonic stack.",
+      "recognitionClues": [
+        "Previous Greater",
+        "Nearest Greater to Left",
+        "Left Greater"
+      ],
+      "prerequisites": [
+        "Monotonic Decreasing Stack"
+      ],
+      "commonMistakes": [
+        "Using wrong traversal direction",
+        "Incorrect comparison"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 901,
+          "title": "Online Stock Span",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/online-stock-span/"
+        },
+        {
+          "leetcodeNumber": 1944,
+          "title": "Number of Visible People in a Queue",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/number-of-visible-people-in-a-queue/"
+        }
+      ]
+    },
+    {
+      "id": "previous-smaller",
+      "name": "Previous Smaller",
+      "description": "Use a monotonic increasing stack to find the nearest smaller element on the left.",
+      "recognitionClues": [
+        "Previous Smaller",
+        "Nearest Smaller",
+        "Histogram"
+      ],
+      "prerequisites": [
+        "Monotonic Increasing Stack"
+      ],
+      "commonMistakes": [
+        "Wrong comparison",
+        "Incorrect stack maintenance"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 84,
+          "title": "Largest Rectangle in Histogram",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+        },
+        {
+          "leetcodeNumber": 907,
+          "title": "Sum of Subarray Minimums",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/sum-of-subarray-minimums/"
+        }
+      ]
+    },
+    {
+      "id": "balanced-parentheses",
+      "name": "Balanced Parentheses",
+      "description": "Classic stack problems involving brackets, nested expressions and validation.",
+      "recognitionClues": [
+        "Balanced Brackets",
+        "Parentheses",
+        "Matching Symbols",
+        "Nested Expressions"
+      ],
+      "prerequisites": [
+        "Basic Stack"
+      ],
+      "commonMistakes": [
+        "Ignoring empty stack",
+        "Wrong bracket matching",
+        "Missing closing bracket"
+      ],
+      "estimatedProblems": 7,
+      "problems": [
+        {
+          "leetcodeNumber": 20,
+          "title": "Valid Parentheses",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/"
+        },
+        {
+          "leetcodeNumber": 32,
+          "title": "Longest Valid Parentheses",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/longest-valid-parentheses/"
+        },
+        {
+          "leetcodeNumber": 921,
+          "title": "Minimum Add to Make Parentheses Valid",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/"
+        },
+        {
+          "leetcodeNumber": 1249,
+          "title": "Minimum Remove to Make Valid Parentheses",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/"
+        }
+      ]
+    },
+    {
+      "id": "expression-evaluation",
+      "name": "Expression Evaluation",
+      "description": "Evaluate arithmetic expressions using stacks while respecting operator precedence and parentheses.",
+      "recognitionClues": [
+        "Calculator",
+        "Expression",
+        "Postfix",
+        "Infix",
+        "Prefix"
+      ],
+      "prerequisites": [
+        "Basic Stack"
+      ],
+      "commonMistakes": [
+        "Ignoring precedence",
+        "Wrong operand order",
+        "Improper operator handling"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 150,
+          "title": "Evaluate Reverse Polish Notation",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+        },
+        {
+          "leetcodeNumber": 224,
+          "title": "Basic Calculator",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/basic-calculator/"
+        },
+        {
+          "leetcodeNumber": 227,
+          "title": "Basic Calculator II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/basic-calculator-ii/"
+        },
+        {
+          "leetcodeNumber": 772,
+          "title": "Basic Calculator III",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/basic-calculator-iii/"
+        }
+      ]
+    },
+
+    {
+      "id": "histogram",
+      "name": "Histogram",
+      "description": "Histogram problems use monotonic stacks to efficiently compute the nearest smaller bars and maximum rectangular areas.",
+      "recognitionClues": [
+        "Histogram",
+        "Rectangle",
+        "Nearest Smaller",
+        "Area",
+        "Bar Heights"
+      ],
+      "prerequisites": [
+        "Monotonic Increasing Stack"
+      ],
+      "commonMistakes": [
+        "Incorrect width calculation",
+        "Not emptying stack at the end",
+        "Wrong left/right boundary"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 84,
+          "title": "Largest Rectangle in Histogram",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+        },
+        {
+          "leetcodeNumber": 85,
+          "title": "Maximal Rectangle",
+          "difficulty": "Hard",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximal-rectangle/"
+        },
+        {
+          "leetcodeNumber": 1793,
+          "title": "Maximum Score of a Good Subarray",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-score-of-a-good-subarray/"
+        }
+      ]
+    },
+    {
+      "id": "span-problems",
+      "name": "Span Problems",
+      "description": "Span problems determine how far an element can extend while maintaining a given property using monotonic stacks.",
+      "recognitionClues": [
+        "Stock Span",
+        "Consecutive Days",
+        "Visible Elements",
+        "Nearest Greater"
+      ],
+      "prerequisites": [
+        "Monotonic Decreasing Stack"
+      ],
+      "commonMistakes": [
+        "Incorrect span calculation",
+        "Not popping all smaller elements"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 901,
+          "title": "Online Stock Span",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/online-stock-span/"
+        },
+        {
+          "leetcodeNumber": 1944,
+          "title": "Number of Visible People in a Queue",
+          "difficulty": "Hard",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/number-of-visible-people-in-a-queue/"
+        },
+        {
+          "leetcodeNumber": 1762,
+          "title": "Buildings With an Ocean View",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/buildings-with-an-ocean-view/"
+        }
+      ]
+    },
+    {
+      "id": "stack-simulation",
+      "name": "Stack Simulation",
+      "description": "Simulate real-world processes and algorithms using stacks.",
+      "recognitionClues": [
+        "Undo",
+        "Browser History",
+        "Simulation",
+        "Editor",
+        "Reverse Operations"
+      ],
+      "prerequisites": [
+        "Basic Stack"
+      ],
+      "commonMistakes": [
+        "Incorrect push/pop sequence",
+        "State management errors",
+        "Forgetting stack restoration"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 71,
+          "title": "Simplify Path",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/simplify-path/"
+        },
+        {
+          "leetcodeNumber": 331,
+          "title": "Verify Preorder Serialization of a Binary Tree",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/"
+        },
+        {
+          "leetcodeNumber": 394,
+          "title": "Decode String",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/decode-string/"
+        },
+        {
+          "leetcodeNumber": 636,
+          "title": "Exclusive Time of Functions",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/exclusive-time-of-functions/"
+        },
+        {
+          "leetcodeNumber": 735,
+          "title": "Asteroid Collision",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/asteroid-collision/"
+        },
+        {
+          "leetcodeNumber": 1003,
+          "title": "Check If Word Is Valid After Substitutions",
+          "difficulty": "Medium",
+          "serviceImportance": 3,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/"
+        },
+        {
+          "leetcodeNumber": 1209,
+          "title": "Remove All Adjacent Duplicates in String II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/"
+        }
+
+      ]
+    }
+    ]
+}

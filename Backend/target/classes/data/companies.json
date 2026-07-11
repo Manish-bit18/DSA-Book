@@ -1,0 +1,22 @@
+[
+  { "id": "google", "name": "Google" },
+  { "id": "amazon", "name": "Amazon" },
+  { "id": "meta", "name": "Meta" },
+  { "id": "microsoft", "name": "Microsoft" },
+  { "id": "apple", "name": "Apple" },
+  { "id": "netflix", "name": "Netflix" },
+  { "id": "uber", "name": "Uber" },
+  { "id": "twitter", "name": "Twitter (X)" },
+  { "id": "linkedin", "name": "LinkedIn" },
+  { "id": "tiktok", "name": "TikTok" },
+  { "id": "oracle", "name": "Oracle" },
+  { "id": "ibm", "name": "IBM" },
+  { "id": "salesforce", "name": "Salesforce" },
+  { "id": "adobe", "name": "Adobe" },
+  { "id": "bloomberg", "name": "Bloomberg" },
+  { "id": "goldman-sachs", "name": "Goldman Sachs" },
+  { "id": "jpmorgan", "name": "JPMorgan" },
+  { "id": "atlassian", "name": "Atlassian" },
+  { "id": "spotify", "name": "Spotify" },
+  { "id": "walmart", "name": "Walmart Labs" }
+]

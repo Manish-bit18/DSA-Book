@@ -1,0 +1,338 @@
+{
+  "id": "bit-manipulation",
+  "title": "Bit Manipulation",
+  "description": "Master Bit Manipulation from beginner to advanced. Learn XOR, AND, OR, Bitmasking, Power of Two, Power Set and Bit Counting.",
+  "patterns": [
+    {
+      "id": "xor",
+      "name": "XOR",
+      "description": "Use XOR properties to solve unique element, missing number and parity problems.",
+      "recognitionClues": [
+        "Single Element",
+        "Odd Frequency",
+        "Missing Number",
+        "Pair Cancellation",
+        "XOR"
+      ],
+      "prerequisites": [
+        "Binary Numbers"
+      ],
+      "commonMistakes": [
+        "Confusing XOR with OR",
+        "Ignoring XOR properties"
+      ],
+      "estimatedProblems": 8,
+      "problems": [
+        {
+          "leetcodeNumber": 136,
+          "title": "Single Number",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/single-number/"
+        },
+        {
+          "leetcodeNumber": 137,
+          "title": "Single Number II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/single-number-ii/"
+        },
+        {
+          "leetcodeNumber": 260,
+          "title": "Single Number III",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/single-number-iii/"
+        },
+        {
+          "leetcodeNumber": 268,
+          "title": "Missing Number",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/missing-number/"
+        },
+        {
+          "leetcodeNumber": 389,
+          "title": "Find the Difference",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/find-the-difference/"
+        }
+      ]
+    },
+    {
+      "id": "and",
+      "name": "AND",
+      "description": "Solve problems using bitwise AND operations.",
+      "recognitionClues": [
+        "Bitwise AND",
+        "Common Bits",
+        "Range AND"
+      ],
+      "prerequisites": [
+        "Binary Numbers"
+      ],
+      "commonMistakes": [
+        "Confusing AND with XOR",
+        "Wrong bit masking"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 201,
+          "title": "Bitwise AND of Numbers Range",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/bitwise-and-of-numbers-range/"
+        }
+      ]
+    },
+    {
+      "id": "or",
+      "name": "OR",
+      "description": "Use bitwise OR to manipulate binary representations.",
+      "recognitionClues": [
+        "Bitwise OR",
+        "Binary Merge"
+      ],
+      "prerequisites": [
+        "Binary Numbers"
+      ],
+      "commonMistakes": [
+        "Confusing OR with XOR"
+      ],
+      "estimatedProblems": 3,
+      "problems": [
+        {
+          "leetcodeNumber": 1318,
+          "title": "Minimum Flips to Make a OR b Equal to c",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/"
+        }
+      ]
+    },
+    {
+      "id": "bitmask",
+      "name": "Bitmask",
+      "description": "Represent sets efficiently using bitmasks.",
+      "recognitionClues": [
+        "Mask",
+        "Subset",
+        "Flags",
+        "State Compression"
+      ],
+      "prerequisites": [
+        "Bit Operations"
+      ],
+      "commonMistakes": [
+        "Wrong shifting",
+        "Overflow"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 78,
+          "title": "Subsets",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subsets/"
+        },
+        {
+          "leetcodeNumber": 318,
+          "title": "Maximum Product of Word Lengths",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-product-of-word-lengths/"
+        },
+        {
+          "leetcodeNumber": 1239,
+          "title": "Maximum Length of a Concatenated String with Unique Characters",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/"
+        }
+      ]
+    },
+    {
+      "id": "power-of-two",
+      "name": "Power of Two",
+      "description": "Use bit operations to determine powers of two and related properties.",
+      "recognitionClues": [
+        "Power of Two",
+        "Single Set Bit",
+        "Binary Representation"
+      ],
+      "prerequisites": [
+        "Bit Operations"
+      ],
+      "commonMistakes": [
+        "Ignoring zero",
+        "Using loops unnecessarily"
+      ],
+      "estimatedProblems": 5,
+      "problems": [
+        {
+          "leetcodeNumber": 231,
+          "title": "Power of Two",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/power-of-two/"
+        },
+        {
+          "leetcodeNumber": 326,
+          "title": "Power of Three",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/power-of-three/"
+        },
+        {
+          "leetcodeNumber": 342,
+          "title": "Power of Four",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 3,
+          "leetcodeUrl": "https://leetcode.com/problems/power-of-four/"
+        }
+      ]
+    },
+    {
+      "id": "power-set",
+      "name": "Power Set",
+      "description": "Generate all subsets using bit masking.",
+      "recognitionClues": [
+        "Generate All Subsets",
+        "Power Set",
+        "Bit Mask"
+      ],
+      "prerequisites": [
+        "Bitmask"
+      ],
+      "commonMistakes": [
+        "Wrong bit iteration",
+        "Missing subsets"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 78,
+          "title": "Subsets",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subsets/"
+        },
+        {
+          "leetcodeNumber": 90,
+          "title": "Subsets II",
+          "difficulty": "Medium",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/subsets-ii/"
+        }
+      ]
+    },
+    {
+      "id": "subset-enumeration",
+      "name": "Subset Enumeration",
+      "description": "Enumerate subsets efficiently using bit operations.",
+      "recognitionClues": [
+        "Enumerate",
+        "Mask",
+        "Subset",
+        "All Combinations"
+      ],
+      "prerequisites": [
+        "Power Set"
+      ],
+      "commonMistakes": [
+        "Wrong bit position",
+        "Duplicate generation"
+      ],
+      "estimatedProblems": 4,
+      "problems": [
+        {
+          "leetcodeNumber": 1863,
+          "title": "Sum of All Subset XOR Totals",
+          "difficulty": "Easy",
+          "serviceImportance": 4,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/sum-of-all-subset-xor-totals/"
+        },
+        {
+          "leetcodeNumber": 2044,
+          "title": "Count Number of Maximum Bitwise OR Subsets",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/"
+        }
+      ]
+    },
+    {
+      "id": "bit-counting",
+      "name": "Bit Counting",
+      "description": "Count the number of set bits using bit manipulation techniques.",
+      "recognitionClues": [
+        "Count Bits",
+        "Set Bits",
+        "Population Count",
+        "Hamming Weight"
+      ],
+      "prerequisites": [
+        "Bit Operations"
+      ],
+      "commonMistakes": [
+        "Using string conversion",
+        "Incorrect loop condition"
+      ],
+      "estimatedProblems": 6,
+      "problems": [
+        {
+          "leetcodeNumber": 191,
+          "title": "Number of 1 Bits",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/number-of-1-bits/"
+        },
+        {
+          "leetcodeNumber": 338,
+          "title": "Counting Bits",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/counting-bits/"
+        },
+        {
+          "leetcodeNumber": 461,
+          "title": "Hamming Distance",
+          "difficulty": "Easy",
+          "serviceImportance": 5,
+          "productImportance": 4,
+          "leetcodeUrl": "https://leetcode.com/problems/hamming-distance/"
+        },
+        {
+          "leetcodeNumber": 477,
+          "title": "Total Hamming Distance",
+          "difficulty": "Medium",
+          "serviceImportance": 4,
+          "productImportance": 5,
+          "leetcodeUrl": "https://leetcode.com/problems/total-hamming-distance/"
+        }
+      ]
+    }
+  ]
+}
