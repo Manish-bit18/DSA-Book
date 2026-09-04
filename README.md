@@ -1,291 +1,308 @@
-# DSA Book
-
-### Master DSA Pattern by Pattern
-
-DSA Book is a project I built to track my Data Structures and Algorithms (DSA) preparation in a structured way.
-
-While solving DSA problems, I wanted something where I could keep track of the patterns I had learned, the questions I had solved, and my overall progress. Instead of maintaining everything in a notebook or spreadsheet, I decided to build a web application for it.
-
-**Live Website:** https://dsa-book-frontend.onrender.com/
-
-**GitHub Repository:** https://github.com/Manish-bit18/DSA-Book
-
----
-
-## Features
-
-### DSA Patterns
-
-The main idea of DSA Book is to learn and practice DSA pattern by pattern instead of randomly solving questions.
-
-Problems are organized according to the pattern or concept they belong to, making it easier to understand which techniques are being used and where I need more practice.
-
-Some of the patterns and concepts covered include:
-
-* Arrays
-* Strings
-* Two Pointers
-* Sliding Window
-* Prefix Sum
-* Hashing
-* Binary Search
-* Stack
-* Queue
-* Linked List
-* Recursion
-* Trees
-* Graphs
-* Greedy
-* Dynamic Programming
-
----
-
-## Problem Tracking
-
-DSA Book allows me to keep track of the problems I am solving.
-
-For each problem, I can maintain information such as:
-
-* Problem name
-* Problem link
-* Difficulty
-* Pattern/topic
-* Solving status
-* Notes or approach
-
-This makes it easier to come back to previously solved problems and revise them instead of solving the same type of problem from scratch again.
-
----
-
-## Progress Tracking
-
-The application provides an overview of my DSA preparation so I can see how much I have completed.
-
-Instead of only counting the total number of problems, the goal is to understand my progress across different DSA patterns.
-
-This helps answer questions like:
-
-* Which patterns have I completed?
-* Which patterns need more practice?
-* How many problems have I solved?
-* What should I revise next?
-
----
-
-## Pattern-Based Learning
-
-One of the main reasons I built this project was because I noticed that many DSA problems become easier once you recognize the underlying pattern.
-
-For example:
-
-```text
-Problem
-   ↓
-Understand the problem
-   ↓
-Identify the pattern
-   ↓
-Learn the approach
-   ↓
-Solve similar problems
-   ↓
-Track progress
-```
-
-Instead of treating every LeetCode problem as a completely new problem, DSA Book focuses on recognizing and practicing reusable patterns.
-
----
-
 ## Project Structure
 
-The repository is divided into three main parts:
+DSA Book is divided into three main parts: `Frontend`, `Backend`, and `data`.
 
 ```text
 DSA-Book
 │
-├── Backend
-│   └── Backend application
-│
 ├── Frontend
-│   └── Web application
+│   ├── public
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── assets
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── Backend
+│   ├── src
+│   │   └── main
+│   │       └── java
+│   │           └── ...
+│   ├── pom.xml
+│   └── ...
 │
 ├── data
-│   └── DSA problems and related data
+│   └── DSA problem data
 │
 └── README.md
 ```
 
 ### Frontend
 
-The frontend contains the user interface of DSA Book.
+The frontend is built using React and Vite.
 
-It handles:
+The main purpose of the frontend is to provide the interface through which I can browse DSA patterns, topics, and problems and keep track of my progress.
 
-* Displaying DSA patterns
-* Showing problems
-* Tracking problem status
-* Displaying progress
-* Navigation between different sections
-* Communicating with the backend
+The frontend is divided into different components and pages so that each part of the application has a separate responsibility.
 
-### Backend
+The general flow of the frontend is:
 
-The backend handles the application logic and APIs.
+```text
+User
+ │
+ ▼
+React UI
+ │
+ ├── Patterns
+ ├── Topics
+ ├── Problems
+ ├── Progress
+ └── Problem Details
+ │
+ ▼
+API Calls
+ │
+ ▼
+Spring Boot Backend
+```
 
-It is responsible for:
-
-* Managing DSA problem data
-* Handling API requests
-* Updating problem status
-* Providing data to the frontend
-* Connecting the application with the database
-
-### Data
-
-The `data` directory contains the DSA-related data used by the application.
-
----
-
-## Tech Stack
-
-### Frontend
-
-* React
-* Vite
-* JavaScript
-* Tailwind CSS
-* DaisyUI
-* Axios
+The frontend communicates with the backend using REST APIs. Axios is used for making HTTP requests to the backend.
 
 ### Backend
 
-* Java
-* Spring Boot
-* Spring Web
-* Spring Data JPA
-* Maven
+The backend is built using Java and Spring Boot.
 
-### Database
+I used Spring Boot to create the REST APIs required by the frontend. The backend handles the application logic and communicates with the database using Spring Data JPA.
 
-* MySQL
+The backend follows a layered structure:
 
-### Tools
+```text
+Controller
+    │
+    ▼
+Service
+    │
+    ▼
+Repository
+    │
+    ▼
+Database
+```
 
-* Git
-* GitHub
-* IntelliJ IDEA
-* VS Code
-* Postman
+#### Controller Layer
+
+The controller layer exposes REST endpoints that can be called by the frontend.
+
+It receives requests from the frontend and passes them to the appropriate service.
+
+#### Service Layer
+
+The service layer contains the main application logic.
+
+It handles operations such as retrieving problems, updating solving status, fetching patterns and topics, and preparing the required data for the frontend.
+
+#### Repository Layer
+
+The repository layer is responsible for communicating with the database.
+
+Spring Data JPA is used here to perform database operations without having to write every SQL query manually.
+
+#### Database
+
+MySQL is used as the database for storing the application data.
+
+The backend communicates with MySQL through Spring Data JPA and Hibernate.
 
 ---
 
-## How the Application Works
+## DSA Content Structure
 
-The basic flow of the application is:
+The main idea behind DSA Book is to organize DSA preparation in a hierarchy rather than keeping all problems in one large list.
+
+The structure is:
+
+```text
+DSA
+ │
+ ├── Pattern
+ │      │
+ │      └── Topic
+ │              │
+ │              └── Problems
+```
+
+For example:
+
+```text
+Arrays
+ │
+ ├── Prefix Sum
+ │      ├── Problem 1
+ │      ├── Problem 2
+ │      └── Problem 3
+ │
+ ├── Two Pointers
+ │      ├── Problem 1
+ │      └── Problem 2
+ │
+ └── Sliding Window
+        ├── Problem 1
+        └── Problem 2
+```
+
+This structure makes it easier to learn DSA based on the technique used to solve a problem.
+
+---
+
+## Patterns and Topics
+
+**The current version of DSA Book contains 136 DSA Patterns** and 18** Topics**, covering a wide range of commonly used techniques and concepts.
+
+The patterns are organized so that related problems can be practiced together instead of solving random questions.
+
+### DSA Patterns
+
+The project currently covers patterns such as:
+
+* Array Traversal
+* Two Pointers
+* Sliding Window
+* Prefix Sum
+* Hashing
+* Binary Search
+* Sorting
+* Stack
+* Queue
+* Linked List
+* Recursion
+* Backtracking
+* Trees
+* Binary Search Tree
+* Heap / Priority Queue
+* Graph
+* Greedy
+* Dynamic Programming
+* Bit Manipulation
+* And more
+
+### Topics
+
+Each pattern is further divided into smaller topics.
+
+For example:
+
+```text
+Pattern: Sliding Window
+│
+├── Fixed Size Window
+├── Variable Size Window
+└── Frequency Based Window
+```
+
+Similarly, a larger topic such as Trees can contain multiple subtopics and different types of problems.
+
+This allows the project to be used not only as a problem tracker but also as a structured DSA learning resource.
+
+---
+
+## Problem Organization
+
+Each problem is associated with its relevant pattern and topic.
+
+A typical problem contains information such as:
+
+```text
+Problem
+│
+├── Problem Name
+├── Problem Link
+├── Difficulty
+├── Pattern
+├── Topic
+└── Solving Status
+```
+
+This makes it possible to filter and organize problems based on different criteria.
+
+For example, I can focus only on:
+
+```text
+Pattern → Sliding Window
+        ↓
+Topic → Variable Size Window
+        ↓
+Problems → Practice Problems
+```
+
+This approach makes revision easier because I can go back to a particular pattern and practice multiple problems based on the same technique.
+
+---
+
+## Tracking DSA Progress
+
+The project is also designed to track my progress while solving problems.
+
+Instead of maintaining a separate notebook or spreadsheet, the solving status is maintained directly in the application.
+
+The progress can be viewed based on the available DSA structure, allowing me to understand which patterns and topics I have already practiced and which ones still need attention.
+
+The main purpose is not just to count solved problems but to understand how much of the DSA syllabus I have covered.
+
+---
+
+## Data Structure
+
+The DSA data is maintained separately from the application logic.
+
+The `data` directory contains the DSA-related information used by the application.
+
+This separation makes it easier to add new problems, topics, or patterns without having to change the main application structure.
+
+The overall architecture can be represented as:
 
 ```text
                     DSA Book
                        │
-             ┌─────────┴─────────┐
-             │                   │
-          Frontend            Backend
-             │                   │
-             │              REST APIs
-             │                   │
-             └──────────┬────────┘
-                        │
-                     Database
+          ┌────────────┴────────────┐
+          │                         │
+      Frontend                   Backend
+       React                    Spring Boot
+          │                         │
+          │                      Service
+          │                         │
+          │                     Repository
+          │                         │
+          └────── REST API ────────┤
+                                    │
+                                  MySQL
 ```
-
-The frontend communicates with the Spring Boot backend through REST APIs. The backend processes the requests and works with the database to store and retrieve the required information.
 
 ---
 
-## Running the Project Locally
+## How I Built the Project
 
-### 1. Clone the Repository
+I built DSA Book as a full-stack project while working on my own DSA preparation.
 
-```bash
-git clone https://github.com/Manish-bit18/DSA-Book.git
-cd DSA-Book
+The first part was organizing the DSA content into patterns, topics, and problems. Once the data structure was decided, I created the backend APIs using Spring Boot.
+
+After setting up the backend and database, I built the React frontend to display the DSA content and interact with those APIs.
+
+The development process was roughly:
+
+```text
+DSA Content
+     ↓
+Data Organization
+     ↓
+Database Design
+     ↓
+Spring Boot Backend
+     ↓
+REST APIs
+     ↓
+React Frontend
+     ↓
+Progress Tracking
+     ↓
+Deployment
 ```
 
-### 2. Run the Backend
+The frontend and backend are maintained separately in the repository, which also makes it easier to develop and deploy them independently.
 
-Go to the backend directory:
+The application is currently deployed and available online.
 
-```bash
-cd Backend
-```
-
-Configure the database connection in the Spring Boot configuration and make sure MySQL is running.
-
-Then run the Spring Boot application from IntelliJ IDEA or using Maven.
-
-### 3. Run the Frontend
-
-Open another terminal and go to the frontend directory:
-
-```bash
-cd Frontend
-```
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-The frontend will then be available on the local development URL provided by Vite.
-
----
-
-## Why I Built This
-
-I built DSA Book mainly for my own DSA preparation.
-
-I was solving problems from different platforms and learning different patterns, but keeping track of everything separately was becoming difficult.
-
-So I decided to build something that combines DSA learning, problem solving, pattern recognition, progress tracking, and revision into one application.
-
-It also gave me a chance to work on a complete application instead of only solving individual coding problems.
-
----
-
-## Future Improvements
-
-There are several things I would like to improve in the future:
-
-* Add more DSA patterns and problems
-* Improve progress analytics
-* Add daily and weekly solving statistics
-* Add better revision tracking
-* Add difficulty-wise progress
-* Add search and filtering
-* Add user authentication
-* Improve the UI and mobile responsiveness
-* Add more detailed notes for individual problems
-
----
-
-## Live Project
-
-The project is deployed and can be accessed here:
-
-https://dsa-book-frontend.onrender.com/
-
----
-
-## Author
-
-**Manish**
-
-B.Tech CSE Student
-
-I built this project as part of my DSA preparation and to get more practical experience in building full-stack applications.
+**Live Website:** https://dsa-book-frontend.onrender.com/
