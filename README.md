@@ -1,308 +1,278 @@
-## Project Structure
+# DSA Book
 
-DSA Book is divided into three main parts: `Frontend`, `Backend`, and `data`.
+**DSA Book** is a full-stack web application I built to organize and track my DSA preparation pattern by pattern.
 
-```text
-DSA-Book
-│
-├── Frontend
-│   ├── public
-│   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   ├── services
-│   │   ├── assets
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   ├── package.json
-│   └── vite.config.js
-│
-├── Backend
-│   ├── src
-│   │   └── main
-│   │       └── java
-│   │           └── ...
-│   ├── pom.xml
-│   └── ...
-│
-├── data
-│   └── DSA problem data
-│
-└── README.md
-```
+Instead of solving random problems, the idea is to have a structured collection of DSA topics, patterns, and problems where I can track what I have solved and what I still need to practice.
 
-### Frontend
-
-The frontend is built using React and Vite.
-
-The main purpose of the frontend is to provide the interface through which I can browse DSA patterns, topics, and problems and keep track of my progress.
-
-The frontend is divided into different components and pages so that each part of the application has a separate responsibility.
-
-The general flow of the frontend is:
-
-```text
-User
- │
- ▼
-React UI
- │
- ├── Patterns
- ├── Topics
- ├── Problems
- ├── Progress
- └── Problem Details
- │
- ▼
-API Calls
- │
- ▼
-Spring Boot Backend
-```
-
-The frontend communicates with the backend using REST APIs. Axios is used for making HTTP requests to the backend.
-
-### Backend
-
-The backend is built using Java and Spring Boot.
-
-I used Spring Boot to create the REST APIs required by the frontend. The backend handles the application logic and communicates with the database using Spring Data JPA.
-
-The backend follows a layered structure:
-
-```text
-Controller
-    │
-    ▼
-Service
-    │
-    ▼
-Repository
-    │
-    ▼
-Database
-```
-
-#### Controller Layer
-
-The controller layer exposes REST endpoints that can be called by the frontend.
-
-It receives requests from the frontend and passes them to the appropriate service.
-
-#### Service Layer
-
-The service layer contains the main application logic.
-
-It handles operations such as retrieving problems, updating solving status, fetching patterns and topics, and preparing the required data for the frontend.
-
-#### Repository Layer
-
-The repository layer is responsible for communicating with the database.
-
-Spring Data JPA is used here to perform database operations without having to write every SQL query manually.
-
-#### Database
-
-MySQL is used as the database for storing the application data.
-
-The backend communicates with MySQL through Spring Data JPA and Hibernate.
+**Live:** https://dsa-book-frontend.onrender.com/
+**Repository:** https://github.com/Manish-bit18/DSA-Book
 
 ---
 
-## DSA Content Structure
+## Project Overview
 
-The main idea behind DSA Book is to organize DSA preparation in a hierarchy rather than keeping all problems in one large list.
+DSA Book currently contains:
 
-The structure is:
+* **18 DSA Topics**
+* **136 DSA Patterns**
+* A collection of problems organized under these patterns
+* Problem-solving status tracking
+* Pattern-wise and topic-wise organization
+
+The main structure of the application is:
 
 ```text
-DSA
- │
- ├── Pattern
- │      │
- │      └── Topic
- │              │
- │              └── Problems
+Topic
+  └── Pattern
+        └── Problems
 ```
 
 For example:
 
 ```text
 Arrays
- │
- ├── Prefix Sum
- │      ├── Problem 1
- │      ├── Problem 2
- │      └── Problem 3
- │
- ├── Two Pointers
- │      ├── Problem 1
- │      └── Problem 2
- │
- └── Sliding Window
+  ├── Two Pointers
+  │     ├── Problem 1
+  │     ├── Problem 2
+  │     └── Problem 3
+  │
+  ├── Sliding Window
+  │     ├── Problem 1
+  │     └── Problem 2
+  │
+  └── Prefix Sum
         ├── Problem 1
         └── Problem 2
 ```
 
-This structure makes it easier to learn DSA based on the technique used to solve a problem.
+This structure helps in identifying the pattern behind a problem instead of treating every problem as a completely different question.
 
 ---
 
-## Patterns and Topics
+## How I Structured the Project
 
-**The current version of DSA Book contains 136 DSA Patterns** and 18** Topics**, covering a wide range of commonly used techniques and concepts.
+The repository is divided into three major parts:
 
-The patterns are organized so that related problems can be practiced together instead of solving random questions.
+```text
+DSA-Book/
+│
+├── Frontend/
+├── Backend/
+├── data/
+└── README.md
+```
 
-### DSA Patterns
+### Frontend
 
-The project currently covers patterns such as:
+The frontend is built with **React + Vite**.
 
-* Array Traversal
-* Two Pointers
-* Sliding Window
-* Prefix Sum
-* Hashing
-* Binary Search
-* Sorting
-* Stack
-* Queue
-* Linked List
-* Recursion
-* Backtracking
-* Trees
-* Binary Search Tree
-* Heap / Priority Queue
-* Graph
-* Greedy
-* Dynamic Programming
-* Bit Manipulation
-* And more
+It is responsible for the complete user interface of the application, including displaying topics, patterns, problems and progress.
 
-### Topics
+The frontend is organized into reusable components and pages instead of keeping everything in a single file.
 
-Each pattern is further divided into smaller topics.
+It communicates with the backend through REST APIs using Axios.
+
+```text
+React Frontend
+      │
+      │ REST API
+      ▼
+Spring Boot Backend
+```
+
+### Backend
+
+The backend is built using **Java and Spring Boot**.
+
+I followed a layered architecture so that the responsibilities of different parts of the backend remain separated.
+
+```text
+Controller
+    ↓
+Service
+    ↓
+Repository
+    ↓
+MySQL
+```
+
+**Controller** handles the API requests coming from the frontend.
+
+**Service** contains the application logic and processes the requested operations.
+
+**Repository** handles database operations using Spring Data JPA.
+
+**MySQL** stores the application data.
+
+---
+
+## DSA Data Structure
+
+The DSA content is maintained separately in the `data` directory.
+
+I structured the data around three levels:
+
+```text
+18 Topics
+    ↓
+136 Patterns
+    ↓
+Problems
+```
+
+A topic represents a broader area of DSA, while patterns represent the specific techniques or approaches used to solve problems.
 
 For example:
 
 ```text
-Pattern: Sliding Window
-│
-├── Fixed Size Window
-├── Variable Size Window
-└── Frequency Based Window
+Topic
+  ↓
+Arrays
+
+Pattern
+  ↓
+Sliding Window
+
+Problems
+  ↓
+Problem 1
+Problem 2
+Problem 3
+...
 ```
 
-Similarly, a larger topic such as Trees can contain multiple subtopics and different types of problems.
-
-This allows the project to be used not only as a problem tracker but also as a structured DSA learning resource.
+Keeping the DSA data separate from the frontend and backend makes it easier to maintain and expand the problem collection.
 
 ---
 
-## Problem Organization
+## Application Architecture
 
-Each problem is associated with its relevant pattern and topic.
-
-A typical problem contains information such as:
-
-```text
-Problem
-│
-├── Problem Name
-├── Problem Link
-├── Difficulty
-├── Pattern
-├── Topic
-└── Solving Status
-```
-
-This makes it possible to filter and organize problems based on different criteria.
-
-For example, I can focus only on:
-
-```text
-Pattern → Sliding Window
-        ↓
-Topic → Variable Size Window
-        ↓
-Problems → Practice Problems
-```
-
-This approach makes revision easier because I can go back to a particular pattern and practice multiple problems based on the same technique.
-
----
-
-## Tracking DSA Progress
-
-The project is also designed to track my progress while solving problems.
-
-Instead of maintaining a separate notebook or spreadsheet, the solving status is maintained directly in the application.
-
-The progress can be viewed based on the available DSA structure, allowing me to understand which patterns and topics I have already practiced and which ones still need attention.
-
-The main purpose is not just to count solved problems but to understand how much of the DSA syllabus I have covered.
-
----
-
-## Data Structure
-
-The DSA data is maintained separately from the application logic.
-
-The `data` directory contains the DSA-related information used by the application.
-
-This separation makes it easier to add new problems, topics, or patterns without having to change the main application structure.
-
-The overall architecture can be represented as:
+The complete application works as a full-stack system:
 
 ```text
                     DSA Book
                        │
-          ┌────────────┴────────────┐
-          │                         │
-      Frontend                   Backend
-       React                    Spring Boot
-          │                         │
-          │                      Service
-          │                         │
-          │                     Repository
-          │                         │
-          └────── REST API ────────┤
-                                    │
-                                  MySQL
+              ┌────────┴────────┐
+              │                 │
+          Frontend            Backend
+           React             Spring Boot
+              │                 │
+              │    REST API     │
+              └────────┬────────┘
+                       │
+                  Spring Data JPA
+                       │
+                     MySQL
 ```
+
+The frontend is responsible for the user interface, while the backend handles the application logic and database operations.
 
 ---
 
-## How I Built the Project
+## Tech Stack
 
-I built DSA Book as a full-stack project while working on my own DSA preparation.
+### Frontend
 
-The first part was organizing the DSA content into patterns, topics, and problems. Once the data structure was decided, I created the backend APIs using Spring Boot.
+* React
+* Vite
+* JavaScript
+* Tailwind CSS
+* DaisyUI
+* Axios
 
-After setting up the backend and database, I built the React frontend to display the DSA content and interact with those APIs.
+### Backend
 
-The development process was roughly:
+* Java
+* Spring Boot
+* Spring Web
+* Spring Data JPA
+* Hibernate
+* Maven
+
+### Database
+
+* MySQL
+
+### Tools
+
+* Git
+* GitHub
+* IntelliJ IDEA
+* VS Code
+* Postman
+
+---
+
+## Development Approach
+
+I built the project in stages.
+
+First, I organized the DSA content into topics and patterns. After deciding how the data should be structured, I created the backend and database layer to manage that data.
+
+Once the APIs were ready, I developed the React frontend and connected it with the Spring Boot backend.
+
+The overall development flow was:
 
 ```text
 DSA Content
      ↓
 Data Organization
      ↓
-Database Design
+Database
      ↓
-Spring Boot Backend
-     ↓
-REST APIs
+Spring Boot APIs
      ↓
 React Frontend
      ↓
-Progress Tracking
+Problem Tracking
      ↓
 Deployment
 ```
 
-The frontend and backend are maintained separately in the repository, which also makes it easier to develop and deploy them independently.
+The project is deployed online, with the frontend and backend maintained as separate parts of the application.
 
-The application is currently deployed and available online.
+---
 
-**Live Website:** https://dsa-book-frontend.onrender.com/
+## Purpose
+
+I built DSA Book primarily to use it during my own DSA preparation.
+
+The goal was to have one place where I could:
+
+* Learn DSA topic by topic
+* Understand different problem-solving patterns
+* Practice problems belonging to the same pattern
+* Track solved problems
+* Identify patterns that need more practice
+* Come back to problems for revision
+
+The project also helped me understand how a frontend, backend, database, and REST APIs work together in a complete full-stack application.
+
+---
+
+## Future Improvements
+
+Some improvements I plan to work on:
+
+* Add more problems and patterns
+* Improve progress tracking
+* Add better filtering and search
+* Add detailed problem notes
+* Add more revision-focused features
+* Improve analytics for topic and pattern-wise progress
+* Improve mobile responsiveness
+
+---
+
+## Live Project
+
+**DSA Book - Master DSA Pattern by Pattern**
+
+https://dsa-book-frontend.onrender.com/
+
+---
+
+## Author
+
+**Manish**
+B.Tech CSE Student
