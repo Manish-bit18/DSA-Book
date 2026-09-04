@@ -1,8 +1,10 @@
 # DSA Book
 
+### Master DSA Pattern by Pattern
+
 **DSA Book** is a full-stack web application I built to organize and track my DSA preparation pattern by pattern.
 
-Instead of solving random problems, the idea is to have a structured collection of DSA topics, patterns, and problems where I can track what I have solved and what I still need to practice.
+Instead of solving random problems, the application provides a structured collection of DSA topics, patterns, and problems where I can track what I have solved and what I still need to practice.
 
 **Live:** https://dsa-book-frontend.onrender.com/
 **Repository:** https://github.com/Manish-bit18/DSA-Book
@@ -18,6 +20,7 @@ DSA Book currently contains:
 * A collection of problems organized under these patterns
 * Problem-solving status tracking
 * Pattern-wise and topic-wise organization
+* Structured DSA content stored in JSON files
 
 The main structure of the application is:
 
@@ -45,32 +48,29 @@ Arrays
         └── Problem 2
 ```
 
-This structure helps in identifying the pattern behind a problem instead of treating every problem as a completely different question.
+This structure helps identify the pattern behind a problem instead of treating every problem as a completely different question.
 
 ---
 
-## How I Structured the Project
+## Project Structure
 
-The repository is divided into three major parts:
+The repository is divided into separate frontend and backend applications:
 
 ```text
 DSA-Book/
 │
 ├── Frontend/
 ├── Backend/
-├── data/
 └── README.md
 ```
 
 ### Frontend
 
-The frontend is built with **React + Vite**.
+The frontend is built with **React + Vite + Tailwind CSS**.
 
-It is responsible for the complete user interface of the application, including displaying topics, patterns, problems and progress.
+It is responsible for the user interface, including displaying topics, patterns, problems, and progress.
 
-The frontend is organized into reusable components and pages instead of keeping everything in a single file.
-
-It communicates with the backend through REST APIs using Axios.
+The frontend is organized into reusable components and pages and communicates with the backend through REST APIs using Axios.
 
 ```text
 React Frontend
@@ -84,7 +84,7 @@ Spring Boot Backend
 
 The backend is built using **Java and Spring Boot**.
 
-I followed a layered architecture so that the responsibilities of different parts of the backend remain separated.
+I followed a layered architecture to separate the responsibilities of different parts of the application.
 
 ```text
 Controller
@@ -93,24 +93,48 @@ Service
     ↓
 Repository
     ↓
-MySQL
+Persistence Layer
 ```
 
-**Controller** handles the API requests coming from the frontend.
+**Controller** handles API requests coming from the frontend.
 
-**Service** contains the application logic and processes the requested operations.
+**Service** contains the application logic and processes requested operations.
 
-**Repository** handles database operations using Spring Data JPA.
+**Repository** handles persistence operations using **Spring Data JPA**.
 
-**MySQL** stores the application data.
+**Entity** classes represent the application's data models.
+
+**Hibernate** is used as the JPA implementation for ORM and persistence operations.
 
 ---
 
 ## DSA Data Structure
 
-The DSA content is maintained separately in the `data` directory.
+The DSA content is maintained as structured JSON data inside the backend resources.
 
-I structured the data around three levels:
+The project contains separate JSON files for different DSA areas, such as:
+
+```text
+Backend/
+└── src/
+    └── main/
+        └── resources/
+            └── data/
+                ├── arrays.json
+                ├── backtracking.json
+                ├── binarysearch.json
+                ├── bitmanipulation.json
+                ├── bst.json
+                ├── chapters.json
+                ├── companies.json
+                ├── hashmap.json
+                ├── heap.json
+                ├── linkedlist.json
+                ├── math.json
+                └── patterns.json
+```
+
+The content follows a structured hierarchy:
 
 ```text
 18 Topics
@@ -120,7 +144,7 @@ I structured the data around three levels:
 Problems
 ```
 
-A topic represents a broader area of DSA, while patterns represent the specific techniques or approaches used to solve problems.
+A topic represents a broader area of DSA, while a pattern represents a specific technique or approach used to solve problems.
 
 For example:
 
@@ -138,10 +162,9 @@ Problems
 Problem 1
 Problem 2
 Problem 3
-...
 ```
 
-Keeping the DSA data separate from the frontend and backend makes it easier to maintain and expand the problem collection.
+Using structured JSON files makes the DSA content easier to organize, maintain, and expand.
 
 ---
 
@@ -160,12 +183,30 @@ The complete application works as a full-stack system:
               │    REST API     │
               └────────┬────────┘
                        │
-                  Spring Data JPA
+                Spring Data JPA
                        │
-                     MySQL
+                Persistence Layer
 ```
 
-The frontend is responsible for the user interface, while the backend handles the application logic and database operations.
+The overall flow is:
+
+```text
+JSON DSA Content
+       ↓
+Spring Boot Backend
+       ↓
+Service Layer
+       ↓
+JPA / Hibernate
+       ↓
+Persistence Layer
+       ↓
+REST APIs
+       ↓
+React Frontend
+```
+
+The frontend is responsible for the user interface, while the backend handles application logic, API requests, and persistence operations.
 
 ---
 
@@ -189,9 +230,9 @@ The frontend is responsible for the user interface, while the backend handles th
 * Hibernate
 * Maven
 
-### Database
+### Data
 
-* MySQL
+* JSON
 
 ### Tools
 
@@ -207,18 +248,24 @@ The frontend is responsible for the user interface, while the backend handles th
 
 I built the project in stages.
 
-First, I organized the DSA content into topics and patterns. After deciding how the data should be structured, I created the backend and database layer to manage that data.
+First, I organized the DSA content into topics, patterns, and problems using structured JSON files.
 
-Once the APIs were ready, I developed the React frontend and connected it with the Spring Boot backend.
+Then, I designed the backend using Spring Boot and separated it into controller, service, repository, entity, mapper, DTO, and other supporting layers.
+
+Spring Data JPA and Hibernate were used to handle persistence operations.
+
+Once the backend APIs were ready, I developed the React frontend and connected it with the Spring Boot backend using REST APIs.
 
 The overall development flow was:
 
 ```text
 DSA Content
      ↓
-Data Organization
+JSON Data Organization
      ↓
-Database
+Backend Architecture
+     ↓
+Persistence Layer
      ↓
 Spring Boot APIs
      ↓
@@ -229,7 +276,21 @@ Problem Tracking
 Deployment
 ```
 
-The project is deployed online, with the frontend and backend maintained as separate parts of the application.
+The frontend and backend are maintained as separate applications and deployed for online access.
+
+---
+
+## Key Features
+
+* Topic-wise DSA organization
+* Pattern-wise problem organization
+* **136 DSA patterns across 18 topics**
+* Problem-solving status tracking
+* Structured JSON-based DSA content
+* REST API-based frontend/backend communication
+* Spring Data JPA-based persistence
+* Responsive React interface
+* Pattern and topic-based navigation
 
 ---
 
@@ -246,7 +307,7 @@ The goal was to have one place where I could:
 * Identify patterns that need more practice
 * Come back to problems for revision
 
-The project also helped me understand how a frontend, backend, database, and REST APIs work together in a complete full-stack application.
+The project also helped me understand how a **React frontend, Spring Boot backend, REST APIs, JSON-based content, and JPA-based persistence** work together in a full-stack application.
 
 ---
 
@@ -266,7 +327,7 @@ Some improvements I plan to work on:
 
 ## Live Project
 
-**DSA Book - Master DSA Pattern by Pattern**
+**DSA Book — Master DSA Pattern by Pattern**
 
 https://dsa-book-frontend.onrender.com/
 
@@ -274,5 +335,5 @@ https://dsa-book-frontend.onrender.com/
 
 ## Author
 
-**Manish**
+**Manish Prajapati**
 B.Tech CSE Student
